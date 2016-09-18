@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建产品</title>
+    <script src="../Scripts/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div>
+    <input type="text" id="txtid"/>
+    <input type="text" id="txtname"/>
+    <input type="text" id="txtprice"/>
+    <input type="text" id="txtimgsrc"/>
+    <input type="button" id="bt1" value="提交"/>
+    <script>
+        function UrlSearch()
+        {
+            var name,value;
+            var str=location.href; //取得地址栏的url
+            var num=str.indexOf("?");  //？ 的位置
+            str=str.substr(num+1); //取得所有参数  获取？后面的url内容。
+            var arr=str.split("&"); //各个参数放到数组里  ["pid=1"]
+            for(var i=0;i < arr.length;i++){
+                num=arr[i].indexOf("=");
+                if(num>0){
+                    name=arr[i].substring(0,num);
+                    value=arr[i].substr(num+1);
+                    this[name]=value;
+                }
+            }
+        }
+        var request=new UrlSearch(); //实例化
+        var pid=request.id;
+        $.ajax({
+            url:"../product/GetProductById_get?id="+pid,
+            success:function(data){ //mock  { id:101,Data:"string json"}
+                var dataJsonOB=JSON.parse(data.Data);
+                $("#txtid").val(dataJsonOB.id);
+                $("#txtname").val(dataJsonOB.name);
+                $("#txtprice").val(dataJsonOB.price);
+                $("#txtimgsrc").val(dataJsonOB.imgsrc);
+            },
+            dataType:"json"
+        });
+
+        $("#bt1").click(function(){
+            var pName=$("#txtname").val();
+            var pId=$("#txtid").val();
+            var pPrice=$("#txtprice").val();
+            var pImgsrc=$("#txtimgsrc").val();
+
+            var dataJsonOb={
+                "id":pId,
+                "name":pName,
+                "price":pPrice,
+                "imgsrc":pImgsrc
+            }
+            var dataJsonStr=JSON.stringify(dataJsonOb);
+            $.ajax({
+                url:"../product/CreateUpdateProduct_post",
+                data:{
+                    "id":pId,
+                    "datajson":dataJsonStr
+                },
+                success:function(data){
+                    if(data==1){
+                        alert("创建成功");
+                    }else{
+                        alert("创建失败");
+                    }
+                },
+                error:function(){
+                    alert("ajax error");
+                },
+                dataType:"json",
+                type:"post"
+            })
+        });
+    </script>
+</div>
+</body>
+</html>

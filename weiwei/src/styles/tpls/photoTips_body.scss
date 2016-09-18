@@ -1,0 +1,90 @@
+#conBox{
+  background: #f9f8f4;
+}
+.mainCon{
+  width: 1024px;
+  min-height: 800px;
+  margin: 100px auto 0;
+  padding-top: 84px;
+}
+.mainCon ul{
+  padding:71px 0 60px;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+}
+.mainCon li{
+  background: #f9f8f4;
+  width: 200px;
+  height: 420px;
+  margin-left: 40px;
+  float: left;
+}
+.newstitle{
+  width: 200px;
+  height: 63px;
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  line-height: 74px;
+  background: url("/weiwei/img/icon/crs_a.jpg");
+}
+.newsimg{
+  display: block;
+  margin-top: 4px;
+}
+.newsimg img{
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 0;
+}
+.newscon{
+  width: 200px;
+  text-align: center;
+  h3{
+    color: #000;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  p{
+    color:#666;
+    line-height: 22px;
+  }
+  span{
+    display: inline-block;
+    width: 200px;
+    height: 29px;
+    background: url(/weiwei/img/icon/news.jpg) no-repeat;
+    margin-top: 8px;
+  }
+  a{
+    display: inline-block;
+    width: 79px;
+    height: 30px;
+    color: #666;
+    text-align: center;
+    line-height: 28px;
+  }
+  a:hover{
+    background: red;
+    color: #fff;
+  }
+}
+#pageturn{
+  clear: both;
+  width: 650px;
+  margin: 140px auto 0;
+  height: 86px;
+  font-size: 12px;
+  padding-left: 350px;
+  color: #666;
+  button{
+    float: left;
+    border: 0;
+    background: 0;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}

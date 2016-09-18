@@ -1,0 +1,41 @@
+.dlbox{
+  display: block;
+  background: #f2f2f2;
+  width: 325px;
+  height: 444px;
+  float: left;
+  margin: 10px 0px 0 8px;
+  color: #333;
+  cursor: pointer;
+
+}
+.dlbox:hover{
+  background: red;
+  color:#fff;
+}
+.dlbox dl{
+  float: left;
+  width: 325px;
+  height: 444px;
+}
+.dlbox dt{
+  width: 303px;
+  height: 303px;
+  padding: 5px 0 0 5px;
+}
+.dlbox img{
+  border: 0;
+  width: 313px;
+  height: 313px;
+  text-align: center;
+}
+
+.dlbox p{
+  margin: 25px 0 0 17px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.dlbox span{
+  margin-left: 17px;
+  font-size: 12px;
+}

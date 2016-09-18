@@ -1,0 +1,87 @@
+
+#registbox{
+    background-color: #f0f0f0;
+    padding: 160px 0 40px;
+}
+.registcon{
+    width: 1024px;
+    height: 600px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    font-size: 14px;
+    position: relative;
+}
+.registcon h3{
+    width: 1014px;
+    font-weight: 700;
+    color: #383838;
+    font-size: 14px;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.registcon h3 a{
+    position: absolute;
+    right: 60px;
+    top:10px;
+}
+.userName{
+    width: 244px;
+    height: 20px;
+    margin: 100px 0 0 400px;
+}
+.registcon label{
+    float: left;
+}
+.registcon input{
+    float: right;
+}
+.userPass{
+    width: 244px;
+    height: 20px;
+    margin: 20px 0 0 400px;
+}
+.surePass{
+    width: 244px;
+    height: 20px;
+    margin: 20px 0 0 400px;
+}
+#btn{
+    display: block;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background:#f00;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 0 0 500px;
+}
+.agreement{
+    width: 264px;
+    height: 20px;
+    margin: 20px 0 0 400px;
+}
+#sureService{
+    float: left;
+}
+#usertip{
+    width: 140px;
+    height: 40px;
+    display:none;
+    position: absolute;
+    left: 650px;
+    top:138px;
+}
+#passwordtip{
+    width: 120px;
+    height: 40px;
+    display:none;
+    position: absolute;
+    left: 650px;
+    top:200px;
+}
+#serviceTip{
+    text-align: center;
+    display: none;
+}

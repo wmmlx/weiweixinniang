@@ -1,0 +1,46 @@
+<!--**********con****************-->
+<link rel="stylesheet" type="text/css" href="/weiwei/css/share_style0_16.css"/>
+<div id="currentAdress">
+    <div class="currentAdressCon">
+        当前位置：<a href="#">客片展示</a>&gt;
+        <a href="#">婚纱照</a>&gt;
+    </div>
+</div>
+<!--<script type="text/javascript" src="/weiwei/js/share.js"></script>-->
+<div class="detail_con">
+    <h3 class="detail_title"></h3>
+    <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1473514540927">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    </div>
+    <!--<script type="text/javascript" src="/weiwei/js/share.js"></script>-->
+    <div class="detail_Box">
+        <!-- <p>最美的爱情是两情相悦，最幸福的情缘是心有灵犀，或许是上天垂怜，才会遇见这样一份情缘，让我们在生命里相随，在生活中相守。</p>
+         <img src="../img/33-160ZQ41I5.jpg"/>
+         <img src="../img/33-160ZQ41I9.jpg"/>
+         <img src="../img/33-160ZQ41J2.jpg"/>
+         <img src="../img/33-160ZQ41J5.jpg"/>
+         <img src="../img/33-160ZQ41J7.jpg"/>
+         <img src="../img/33-160ZQ41K0.jpg"/>-->
+    </div>
+</div>
+<div class="nextAndPre">
+    <p>上一篇:<a href="#">牛东辉&保戚莉 【凤凰谷】</a></p>
+    <p>下一篇:<a href="#">史鹏飞&杨雨苹【爱情海】</a></p>
+</div>
+<!--<script>
+    window._bd_share_config={
+        "common":{"bdSnsKey":{},
+            "bdText":"",
+            "bdMini":"2",
+            "bdMiniList":false,
+            "bdPic":"",
+            "bdStyle":"0",
+            "bdSize":"32"},
+        "share":{}};
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>-->

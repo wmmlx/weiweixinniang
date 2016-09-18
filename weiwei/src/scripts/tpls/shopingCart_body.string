@@ -1,0 +1,159 @@
+<!--**********adress****************-->
+<div class="adress">
+    <a href="/weiwei/html/index.html">首页&gt;</a><a href="../index.html#photo">摄影报价&gt;</a><span>尊荣相约系</span>
+</div>
+<!--**********con****************-->
+<div class="cart_box">
+    <div class="cart_img">
+        <div class="modelImg">
+            <!-- <img src="images/img1_m.jpg"/>-->
+            <img src="/weiwei/img/conimg/img1_m.jpg"/>
+            <span></span>
+        </div>
+        <div class="smallImg">
+            <!--<img class="active" src="images/img1_x.jpg"/>
+            <img src="images/img2_x.jpg"/>
+            <img src="images/img3_x.jpg"/>
+            <img src="images/img4_x.jpg"/>
+            <img src="images/img5_x.jpg"/>-->
+            <img class="active" src="/weiwei/img/conimg/img1_x.jpg"/>
+            <img src="/weiwei/img/conimg/img2_x.jpg"/>
+            <img src="/weiwei/img/conimg/img3_x.jpg"/>
+            <img src="/weiwei/img/conimg/img4_x.jpg"/>
+            <img src="/weiwei/img/conimg/img5_x.jpg"/>
+        </div>
+    </div>
+    <div class="bigImg">
+        <!-- <img src="images/img1_l.jpg"/>-->
+        <img src="/weiwei/img/conimg/img1_l.jpg"/>
+    </div>
+    <div class="cart_stail">
+        <h3>微微新娘婚纱写真网络特惠套系--<span class="cart_name"></span></h3>
+        <dl class="ncs-meta">
+            <dt>商  城  价：</dt>
+            <dd>
+                <i>¥</i><span class="cart_price"></span>
+            </dd>
+        </dl>
+        <div class="evaluate">
+            <span>商品评分:</span>
+            <i></i>
+            <a href="#">共有0条评价</a>
+        </div>
+        <div class="delivery">
+            <span>拍照地点：</span>
+            <input name="" id="selectCity"  type="text"  class="city_input" readonly="readonly">                <div class="delivery_right">
+            <!-- <i>有货</i>
+             <em>运费：10元|均由原产地发货</em>-->
+        </div>
+        </div>
+        <!-- <div class="variety">
+             <div class="ware">陶器：</div>
+             <div class="nc-spec">
+                 <img src="images/img5_x.jpg"/>
+                 四大名陶之一
+                 <i></i>
+             </div>
+         </div>-->
+        <div class="pingming">
+            <div class="ware">套装：</div>
+            <div class="pingming_right">
+                <div class="spec1">
+                    尊荣相约系
+                    <i></i>
+                </div>
+                <div class="spec1">
+                    大理双廊旅拍
+                    <i></i>
+                </div>
+                <div class="spec1">
+                    浪漫花海系
+                    <i></i>
+                </div>
+                <div class="spec1">
+                    唯美写真系
+                    <i></i>
+                </div>
+                <div class="spec1">
+                    幸福有约系
+                    <i></i>
+                </div>
+                <div class="spec1">
+                    魅力写真系
+                    <i></i>
+                </div>
+            </div>
+        </div>
+        <div class="share">
+            <div class="share_left">
+                会员<a href="login.html">登录</a>可以有更多惊喜哦~<a href="regist.html">注册会员&gt;</a>
+            </div>
+            <div class="bdsharebuttonbox bdshare-button-style0-16" style="float: right;margin-right: 120px;" data-bd-bind="1473514540927">
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            </div>
+        </div>
+        <div class="buyCart">
+            <p class="addToCart">加入购物车</p>
+            <a class="buyNow" href="#">立即购买</a>
+        </div>
+        <div class="ncs-cart-popup">
+            <dl>
+                <dt>成功添加到购物车<a title="关闭" onClick="$('.ncs-cart-popup').css({'display':'none'});">X</a></dt>
+                <dd>
+                    购物车共有 <strong id="bold_num"></strong> 种商品 总金额为：
+                    <em id="bold_mly" class="saleP"></em></dd>
+                <dd class="btns"><a href="javascript:void(0);" class="ncbtn-mini ncbtn-mint" onClick="location.href='xiangqing.html'">查看购物车</a>
+                    <a href="javascript:void(0);" class="ncbtn-mini" value="" onClick="$('.ncs-cart-popup').css({'display':'none'});">继续购物</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!--**********goods_con****************-->
+<div class="goods_con">
+    <ul class="goods_title">
+        <li class="goods_detail">商品详情</li>
+        <li class="asses">商品评价<i>(0)</i></li>
+        <li>购买咨询</li>
+    </ul>
+    <div class="imgShow">
+        <img src="/weiwei/img/conimg/3388.jpg"/>
+        <img src="/weiwei/img/conimg/4688.jpg"/>
+        <img src="/weiwei/img/conimg/5588.jpg"/>
+        <img src="/weiwei/img/conimg/899.jpg"/>
+        <img src="/weiwei/img/conimg/1399.jpg"/>
+        <img src="/weiwei/img/conimg/6099.jpg"/>
+    </div>
+</div>
+<script>
+    $(".goods_detail").css("borderTop","2px solid #F32613");
+    var name,value;
+    var str=decodeURI(location.href); //取得地址栏的url
+    var num=str.indexOf("?");  //？ 的位置
+    str=str.substr(num+1); //取得所有参数  获取？后面的url内容。
+    var arr=str.split("&"); //各个参数放到数组里  ["pid=1"]
+    var cartPrice=arr[0].split("=")[1];
+    var cartName=arr[1].split("=")[1];
+    var specId=arr[2].split("=")[1];
+    $(".cart_name").text(cartName);
+    $(".cart_price").text(cartPrice);
+
+    $(".goods_title").find("li").click(function(){
+        $(".goods_title").find("li").css("borderTop","1px solid #999");
+        $(this).css("borderTop","2px solid #F32613");
+    })
+    var specList=$(".spec1");
+    specList[specId].style.border="2px solid #F32613";
+    specList[specId].children[0].style.display="block";
+    $(".spec1").click(function(){
+        $(".spec1").css("border", "2px solid #eee");
+        $(".spec1").find("i").css("display", "none");
+        $(this).css("border", "2px solid #F32613");
+        $(this).find("i").css("display", "block");
+    })
+</script>

@@ -1,0 +1,92 @@
+<!--**********foot****************-->
+<div id="foot">
+    <div class="footwrap"></div>
+    <div class="foot1">
+        <ul class="contact">
+            <li><a href="#"><img src="/weiwei/img/icon/weibo.jpg" /></a></li>
+            <li><a href="#"><img src="/weiwei/img/icon/weixin.jpg" /></a></li>
+            <li><a href="#"><img src="/weiwei/img/icon/qq.jpg" /></a></li>
+        </ul>
+        <div class="stress">
+            <dl>
+                <dt><img src="/weiwei/img/icon/kefu.jpg"/></dt>
+                <dd>
+                    <div>幸福热线：</div>
+                    <a href="#" class="phone">157&nbsp;520&nbsp;41960</a>
+                    <div>我们欢迎你的来电</div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="/weiwei/img/icon/adress.jpg"/></dt>
+                <dd>
+                    <div class="method">地址：</div>
+                    <div> 人民中路72号富滇银行旁</div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="/weiwei/img/icon/email.jpg"/></dt>
+                <dd>
+                    <div class="method"> QQ：</div>
+                    <div>800088189 </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img src="/weiwei/img/icon/net.jpg"/></dt>
+                <dd>
+                    <div class="method"> 网址：</div>
+                    <div>www.vivibride.cn</div>
+                </dd>
+            </dl>
+        </div>
+        <div class="foot_nav">
+            <ul class="nav_left">
+                <li><a href="#">作品展示</a></li>
+                <li><a href="#">拍摄场景</a></li>
+                <li><a href="#">拍照技巧</a></li>
+                <li><a href="#">客片展示</a></li>
+                <li><a href="#">拍摄报价</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <ul class="nav_right">
+                <li><a href="#"><img src="/weiwei/img/icon/yuyue.jpg"/></a></li>
+                <li><img src="/weiwei/img/icon/erweima.jpg"/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot2">
+        <div class="foot2_con">
+            <p>昆明薇薇新娘婚纱摄影连锁有限公司 站点备案：滇ICP备05005547号-1</p>
+            <p>Copyright 2007-2012 PHOTOGRAPHY AGENCY,SUPPORT BY Infinity arts ad-agency CO.,Ltd.</p>
+            <div class="foot_link">
+                <span>友情链接：</span>
+                <div class="links">
+                    <a href="http://www.bjlmfq.com/" target="_blank">北京婚纱摄影工作室</a>
+                    <a href="http://www.njxzcy.com/" target="_blank">南京婚纱摄影哪家好</a>
+                    <a href="http://sheying.lilywed.cn/" target="_blank">北京婚纱摄影工作室</a>
+                    <a href="http://www.blctwed.com/" target="_blank">巴黎春天官网</a>
+                    <a href="http://www.dalings.com/" target="_blank">戒指</a>
+                    <a href="http://www.nanhunnvjia.com" target="_blank">郑州婚纱摄影</a>
+                    <a href="http://www.timi.net.cn" target="_blank">三亚婚纱摄影</a>
+                    <a href="http://www.wed27.com/" target="_blank">爱妻婚纱摄影</a>
+                    <a href="http://www.yespearl.com/" target="_blank">珍珠</a>
+                    <a href="http://www.lyy99.com/" target="_blank">三亚婚纱摄影工作室</a>
+                    <a href="http://www.deyetown.com/" target="_blank">成都婚纱摄影</a>
+                    <a href="http://www.vipzuanjie.com" target="_blank">钻戒品牌排行</a>
+                    <a href="http://www.dalings.com/" target="_blank">婚戒</a>
+                    <a href="http://www.chinapp.com/hunjiapinpai" target="_blank">婚嫁品牌</a>
+                    <a href="http://www.xmjim.com/" target="_blank">厦门婚纱摄影</a>
+                    <a href="http://www.sjzhunjia.com.cn/" target="_blank">婚纱</a>
+                    <a href="http://www.jinghaisj.com/" target="_blank">摄影培训</a>
+                    <a href="http://www.8photo.cn/" target="_blank">北京婚纱照</a>
+                    <a href="http://www.musestudio.net" target="_blank">韩式婚纱照</a>
+                    <a href="http://paihang.jiameng.com/" target="_blank">加盟店</a>
+                    <a href="http://www.meilele.com/guigang/" target="_blank">贵港家具市场</a>
+                    <a href="http://www.9527lady.com/" target="_blank">时尚女性网</a>
+                    <a href="http://www.musestudio.net/" target="_blank"> 上海婚纱摄影前十名</a>
+                    <a href="http://www.huahaige.com" target="_blank">婚礼策划</a>
+                    <a href="http://www.swarow.com" target="_blank">长沙婚纱摄影</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

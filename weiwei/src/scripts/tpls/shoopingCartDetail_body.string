@@ -1,0 +1,185 @@
+<!--**********con****************-->
+<div class="clear"></div>
+<div class="shopcart">
+    <h1>全部商品</h1>
+    <div class="list-head">
+        <div class="h1">商品名称</div>
+        <div class="h2">价格</div>
+        <div class="h2">数量</div>
+        <div class="h3">操作</div>
+    </div>
+    <div id="cart-list">
+    </div>
+    <div class="cart_gather">
+        <input id="checkall" type="checkbox"/><label for="checkall">全选</label>
+        <input id="invertcheck" type="checkbox"/><label for="invertcheck">反选</label>
+        <input id="canclecheck" type="checkbox"/><label for="canclecheck">取消</label>
+        <div class="gather_right">
+            <p>已选商品<span class="cartNum"></span>件</p>
+            <p>合计(不含运费):<em>￥</em><i class="cartPrice"></i></p>
+            <a href="#">去结算</a>
+        </div>
+    </div>
+</div>
+<script>
+   /* var cookie=require('../commo/cookie.js');*/
+    var carCookies=getCookie("productCookie"); //string
+    if (carCookies != "undefined") {
+        var arrCookies = JSON.parse(carCookies);//string->object
+        for (var i = 0; i < arrCookies.length; i++) {
+            // count+=arrCookies[i].cnt;
+            showProduct(arrCookies[i]);
+
+        }
+        // alert(count);
+        // showCount(count);
+    }
+    /**
+     *每个物品数量的加减
+     */
+    function changeCount(dom, cont) {
+        var productName = dom.parentNode.parentNode.children[0].children[2].innerHTML;
+        var allCookies =getCookie("productCookie");//获取所有的cookie
+        if (allCookies.length > 0) {
+            var arrCookies = JSON.parse(allCookies);
+            for (var i = 0; i < arrCookies.length; i++) {
+                if (arrCookies[i].name == productName) {
+                    arrCookies[i].cnt += cont;
+                    if (arrCookies[i].cnt == 0) {
+                        arrCookies.splice(i, 1);
+                    }
+                    //      count+=cont;
+                    //      showCount(count);
+                    break;
+                }
+            }
+        }
+        var strProInfo = JSON.stringify(arrCookies);
+        setCookie("productCookie", strProInfo, 30);
+        var carList = document.getElementById("cart-list");
+        carList.innerHTML = "";
+        for (var k = 0; k < arrCookies.length; k++) {
+            showProduct(arrCookies[k]);
+        }
+        getTotalCntAndPrice();
+    }
+    /**
+     * 购物车商品
+     */
+    function showProduct(productInfo) {
+        var totalPrice = parseInt(productInfo.price) * productInfo.cnt;
+        var html = "<div class=\"pl\">";
+        html += "<div class=\"c1\">";
+        html += "<input class='cartstatue' type='checkbox' checked/>"
+        html += "<span><img src='/weiwei/img/gouwu/" + productInfo.imgsrc + ".jpg'/></span>";
+        html += "<p>" + productInfo.name + "</p>";
+        html += "</div>"
+        html += "<div class=\"c2\">" + "<span>&yen;</span><i>" + totalPrice + "</i></div>";
+        html += "<div class=\"ncs-figure-input\">";
+        html += "<input name='' onblur='changCookie(this)' id='quantity' value=\"" + productInfo.cnt + "\" size=\"3\" maxlength=\"6\" class=\"input-text\" type=\"text\"/>";
+        html += "<a onclick='changeCount(this,1)' class=\"increase\" nctype=\"increase\">&nbsp;</a>";
+        html += "<a onclick='changeCount(this,-1)' class=\"decrease\" nctype=\"decrease\">&nbsp;</a></div>";
+        html += "<div class=\"c3\"><a onclick='delProduct(this)' href=\"#\">删除</a></div> </div>";
+        var cartList = document.getElementById("cart-list");
+        cartList.innerHTML += html;
+    }
+
+    function changCookie(dom) {
+        var productName = dom.parentNode.parentNode.children[0].children[2].innerHTML;
+        var allCookies = getCookie("productCookie");//获取所有的cookie
+        if (allCookies.length > 0) {
+            var arrCookies = JSON.parse(allCookies);
+            for (var i = 0; i < arrCookies.length; i++) {
+                if (arrCookies[i].name == productName) {
+                    arrCookies[i].cnt = parseInt(dom.value);
+                    break;
+                }
+            }
+        }
+        var strProInfo = JSON.stringify(arrCookies);
+        setCookie("productCookie", strProInfo, 30);
+        var carList = document.getElementById("cart-list");
+        carList.innerHTML = "";
+        for (var k = 0; k < arrCookies.length; k++) {
+            showProduct(arrCookies[k]);
+        }
+        getTotalCntAndPrice();
+    }
+
+    /**
+     * 删除cookie
+     */
+    function delProduct(dom) {
+        //表示是哪个a标签
+        //$("#list").remove(dom);
+        var productName = dom.parentNode.parentNode.children[0].children[2].innerHTML;
+        dom.parentNode.parentNode.parentNode.removeChild(dom.parentNode.parentNode);
+        var allCookies = getCookie("productCookie");//获取所有的cookie
+        if (allCookies.length > 0) {
+            var everyCookies = JSON.parse(allCookies);
+            for (var i = 0; i < everyCookies.length; i++) {
+                if (everyCookies[i].name == productName) {
+                    var cnt = everyCookies[i].cnt;
+                    // count-=cnt;;
+                    //showCount(count);
+                    everyCookies.splice(i, 1);
+                }
+            }
+        }
+        var strEveryCookies = JSON.stringify(everyCookies);
+        setCookie("productCookie", strEveryCookies, 30);
+        getTotalCntAndPrice();
+    }
+
+
+    /**
+     *选中物品数量的加减
+     */
+    function getTotalCntAndPrice() {
+        var total = 0;
+        var price = 0;
+        var cartList = $(".cartstatue");
+        for (var i = 0; i < cartList.length; i++) {
+            //cartList[i].parentNode.parentNode;
+            if (cartList[i].checked) {
+                price += parseInt(cartList[i].parentNode.parentNode.children[1].children[1].innerHTML);
+                total += parseInt(cartList[i].parentNode.parentNode.children[2].children[0].value);
+            }
+        }
+        $(".cartNum").text(total);
+        $(".cartPrice").text(price.toFixed(2));
+    }
+
+    getTotalCntAndPrice();
+    /**
+     *全选
+     */
+    $("#checkall").click(function () {
+        $(".cartstatue").prop("checked", true);
+        getTotalCntAndPrice();
+    })
+    /**
+     *反选
+     */
+    $("#invertcheck").click(function () {
+        if ($(".cartstatue").prop("checked")) {
+            $(".cartstatue").prop("checked", false);
+        } else {
+            $(".cartstatue").prop("checked", true);
+        }
+        getTotalCntAndPrice();
+    });
+    /**
+     *取消所有
+     */
+    $("#canclecheck").click(function () {
+        $(".cartstatue").prop("checked", false);
+        getTotalCntAndPrice();
+    });
+    /**
+     *取消单个物品
+     */
+    $(".cartstatue").click(function () {
+        getTotalCntAndPrice();
+    });
+</script>

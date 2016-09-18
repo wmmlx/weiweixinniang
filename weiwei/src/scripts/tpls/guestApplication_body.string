@@ -1,0 +1,22 @@
+<!--********** con****************-->
+<div id="ZHeaderContainter">
+    <div class="ZHeaderBox">
+        <img src="/weiwei/img/icon/zheader_03.png"/>
+    </div>
+</div>
+<div class="ZContent">
+    <ul id="ZContent_title">
+        <li>店内实景</li>
+        <li>特色外景</li>
+    </ul>
+    <div class="ZCase">
+    </div>
+</div>
+<div id="pageturn">
+    <button>上一页</button>
+    <button>1</button>
+    <button>2</button>
+    <button class="secon">3</button>
+    <button>下一页</button>
+    <span>共3页70条</span>
+</div>

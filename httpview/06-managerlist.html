@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理列表</title>
+    <script src="../Scripts/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<a href="07-managercreate.html">创建</a>
+<table id="tb1">
+
+</table>
+<script>
+    var pageSizeV =10;
+    var pageIndexV=1;
+    //ajax 获取数据 load
+    $(function(){
+        $.ajax({
+            url:"../product/GetProductsByPage_get",
+            data:{
+                "pagesize":pageSizeV,
+                "pageindex":pageIndexV
+            },
+            success:function(data){
+                //mock  array
+                for(var i=0;i<data.length;i++){
+                    //把data 里面的string 主动转成对象；
+                    var dataObj=JSON.parse(data[i].Data);
+                    var trOb=$("<tr><td>"+dataObj.name+"</td><td>"+dataObj.price+"</td><td><img src=\""+dataObj.imgsrc+"\"/></td><td><a href='07-manageredit.html?id="+dataObj.id+"'>编辑</a></td></tr>");
+                    $("#tb1").append(trOb);
+                }
+            },
+            dataType:"json"
+        })
+    });
+</script>
+
+</body>
+</html>

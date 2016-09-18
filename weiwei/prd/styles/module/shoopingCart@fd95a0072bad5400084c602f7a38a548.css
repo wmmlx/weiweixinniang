@@ -1,0 +1,107 @@
+@charset "UTF-8";body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend{margin:0;padding:0}
+img{border:0;display:block}
+li{list-style:none}
+a{text-decoration:none}
+body{font:12px "微软雅黑"}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal}
+i,em{font-style:normal}
+html,body{height:100%}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden}
+#header{position:fixed;top:0;width:100%;height:120px;background:url(/weiwei/img/icon/topbg.jpg) repeat-x;z-index:10000000}
+.header_con{width:1024px;position:absolute;left:0;right:0;margin:auto}
+.logo{position:absolute;width:150px;left:0;top:0;float:left}
+.header_right{float:left;width:832px;position:absolute;top:0;left:167px}
+.header_link{width:268px;float:right;padding:10px 0 25px 0}
+.header_link li{padding-left:5px;float:left}
+.icon3 i{float:left;color:#fb383c;width:57px;height:21px;font-size:14px}
+.icon3 em{float:right;width:123px;height:18px;background:url("/weiwei/img/icon/tel.png") no-repeat}
+#header_nav{clear:both;width:801px;height:30px;margin-left:30px;background:url("/weiwei/img/icon/nav_bg.jpg") no-repeat}
+#header_nav li{float:left;height:30px}
+#header_nav p{color:#999;font-size:10px}
+#header_nav a{float:left;width:133px;font-size:14px;color:#333;text-align:center}
+#foot{color:#fff;background:#ba292e;clear:both}
+#foot .footwrap{height:260px;background:url("/weiwei/img/icon/contuctus_02.png") no-repeat center}
+#foot .foot1{width:1024px;margin:0 auto}
+#foot .foot1 .contact{padding-top:15px;padding-bottom:68px;width:310px;margin-left:405px}
+#foot .foot1 .contact li{float:left;margin-right:48px}
+#foot .foot1 .contact a{float:left}
+#foot .foot1 .stress{margin-top:60px;width:1000px;height:97px;padding-top:30px;font-size:14px;border-bottom:1px solid #fff;border-top:1px solid #fff}
+#foot .foot1 .stress dl{float:left;width:250px;height:58px}
+#foot .foot1 .stress dt{float:left}
+#foot .foot1 .stress dd{margin-left:10px;float:left}
+#foot .foot1 .stress dd .phone{display:block;color:#fff;font-size:16px;font-weight:900;line-height:26px}
+#foot .foot1 .stress dd .phone:hover{color:yellow}
+#foot .foot1 .stress dd .method{height:25px}
+#foot .foot1 .foot_nav{height:180px}
+#foot .foot1 .foot_nav .nav_left{width:320px;float:left;margin-top:72px}
+#foot .foot1 .foot_nav .nav_left li{float:left;width:103px;height:38px}
+#foot .foot1 .foot_nav .nav_left a{color:#fff;float:left}
+#foot .foot1 .foot_nav .nav_right{float:right;margin-top:28px}
+#foot .foot1 .foot_nav .nav_right li{float:left;margin-right:28px}
+#foot .foot2{height:210px;background:#202124;margin:23px auto 0}
+#foot .foot2_con{width:1024px;margin:0 auto;padding-top:30px}
+#foot .foot2_con p{text-align:center;color:#5a5a5a;line-height:28px}
+#foot .foot2_con .foot_link{width:1024px;margin-top:20px}
+#foot .foot2_con .foot_link span{float:left;height:40px;padding:0 30px 0 30px;text-align:left;color:#ccc}
+#foot .foot2_con .links{float:right;width:900px}
+#foot .foot2_con .links a{padding:5px;font-size:12px;color:#666;line-height:14px}
+.adress{width:1024px;height:40px;margin:160px auto 0;font-size:14px;color:#222}
+.adress a{font-size:14px;color:#222}
+.cart_box{width:1024px;height:440px;margin:0 auto;position:relative}
+.cart_img{float:left;width:360px;height:440px;border-right:1px solid #ccc}
+.modelImg{width:360px;height:360px;position:relative}
+.modelImg img{width:360px;height:360px;display:block}
+.modelImg span{width:175px;height:175px;position:absolute;border:1px solid #fff;-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);box-shadow:0 0 5px rgba(0,0,0,0.3);top:200px;left:200px;cursor:crosshair;display:none}
+.modelImg:hover span{display:block}
+.smallImg{padding-top:5px}
+.smallImg img{border:1px solid #ccc;margin:5px 5px 0 5px;width:60px;height:60px;float:left}
+.smallImg .active{border:1px solid red}
+.smallImg img:hover{border:1px solid red}
+.bigImg{width:0;height:0;float:left;overflow:hidden;position:absolute;z-index:300;left:200px;top:200px;border:1px solid #969696}
+.bigImg img{position:absolute;width:800px;height:800px;display:block}
+.cart_stail{width:600px;height:425px;padding:15px 0 0 20px;float:left;position:relative}
+.cart_stail h3{font:700 16px/21px "Microsoft Yahei";color:#fb383c}
+.ncs-meta{width:600px;height:50px;margin-top:20px;color:#999}
+.ncs-meta dt{float:left;height:30px;font:12px/1.5 Arial}
+.ncs-meta dd{float:left;margin-left:10px;font:700 30px/25px Tahoma;text-shadow:0 1px 0 #6c0900;color:#c00}
+.ncs-meta dd i{font-family:Arial;font-size:18px}
+.evaluate span{float:left;height:30px;font:12px/1.5 Arial;color:#999}
+.evaluate i{margin:0 14px 0 8px;float:left;width:80px;height:16px;background:url("/weiwei/img/icon/star-on.png")}
+.evaluate a{color:#333;text-decoration:underline;float:left}
+.delivery{padding-top:40px;clear:both;width:600px;height:50px}
+.delivery span{float:left;font:12px/1.5 Arial;color:#999}
+.delivery input{float:left;min-width:100px;width:auto;height:20px;border:1px solid #eee;background:url("/weiwei/img/icon/down.png") no-repeat right center}
+.delivery_right{float:left;margin-left:20px}
+.delivery_right i{font-weight:900;font-size:16px;color:#333;margin:0 8px}
+.variety{width:600px;clear:both;height:26px;border-top:1px solid #eee;padding-top:10px}
+.ware{float:left;height:30px;line-height:30px}
+.nc-spec{float:left;width:109px;height:30px;line-height:30px;color:#f32613;border:2px solid #f32613;position:relative;cursor:pointer}
+.nc-spec img{vertical-align:middle;display:inline-block;max-width:24px;max-height:24px;margin-right:5px}
+.nc-spec i{font-size:0;line-height:0;float:left;background:url(/weiwei/img/icon/2014_ncs_public_img.png) no-repeat 0 0;display:block;width:11px;height:11px;position:absolute;z-index:1;right:0;bottom:0}
+.pingming{padding-top:10px;clear:both;width:600px;height:50px}
+.pingming_right{float:left}
+.spec1{width:auto;height:30px;float:left;margin:0 10px;line-height:30px;padding:0 2px;border:2px solid #eee;position:relative;cursor:pointer}
+.spec1 i{font-size:0;line-height:0;float:left;background:url(/weiwei/img/icon/2014_ncs_public_img.png) no-repeat 0 0;display:block;width:11px;height:11px;position:absolute;z-index:1;right:0;bottom:0;display:none}
+.spec1:hover{border:2px solid #f32613}
+.share{width:600px;height:50px;padding-top:10px}
+.share_left{float:left}
+.share_left a{font-size:14px;color:#F00;margin:0 5px}
+.buyCart{width:600px}
+.addToCart{float:left;width:150px;height:50px;border:0;color:#fff;font-size:14px;text-align:center;line-height:50px;cursor:pointer;background-color:#f32613}
+.buyNow{margin-left:20px;float:left;width:150px;height:50px;color:#fff;text-align:center;line-height:50px;font-size:14px;border:0;background-color:#ba7538}
+.goods_con{width:1024px;height:auto;background:#f2f2f2;clear:both;margin:40px auto 20px}
+.goods_title{width:1024px;height:36px}
+.goods_title li{float:left;width:338px;height:36px;line-height:36px;text-align:center;font-size:14px;border-top:1px solid #999;cursor:pointer}
+.asses{border-right:1px solid #999;border-left:1px solid #999}
+.asses i{color:#F00}
+.imgShow{width:1024px;margin-top:10px}
+.imgShow img{width:100%}
+.ncs-cart-popup{background-color:#f5f5f5;display:none;width:320px;height:120px;border:solid 1px #e6e6e6;box-shadow:0 0 3px rgba(153,153,153,0.25);position:absolute;z-index:1;top:402px;left:10px}
+.ncs-cart-popup dl{display:block}
+.ncs-cart-popup dl dt{font:lighter 16px/20px "Microsoft Yahei";color:#333;text-align:center;width:100%;margin:10px 0 5px 0}
+.ncs-cart-popup dl dt a{font:10px/12px Verdana;color:#999;text-align:center;display:inline-block;width:12px;height:12px;float:right;margin:-5px 5px 0 0;cursor:pointer}
+.ncs-cart-popup dl dd{text-align:center;width:100%;margin:0 0 5px 0}
+.saleP{font-weight:600;color:#f32613;vertical-align:middle}
+.btns a.ncbtn-mint{background-color:#48cfae}
+a.ncbtn-mini{line-height:16px;height:16px;padding:3px 7px;border-radius:2px}
+a.ncbtn-mini,a.ncbtn{font:normal 12px/20px "microsoft yahei",arial;color:#FFF;background-color:#ccd0d9;text-align:center;vertical-align:middle;display:inline-block;*display:inline;height:20px;padding:5px 10px;border-radius:3px;cursor:pointer;*zoom:1}

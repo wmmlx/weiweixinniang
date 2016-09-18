@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        form{
+            width:200px;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            left: 500px;
+            top:200px;
+        }
+        label{
+            width: 60px;
+            height: 20px;
+            float: left;
+        }
+        input{
+            width: 100px;
+            height: 20px;
+            float: left;
+        }
+        .mar{
+            margin-top: 10px;
+        }
+        #sure{
+            cursor: pointer;
+            margin-left: 60px;
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+            border: 0;
+            background: #eee;
+        }
+        #usertip{
+            width: 120px;
+            height: 40px;
+            display:none;
+            position: absolute;
+            left:180px;
+            top:0px;
+        }
+        #passwordtip{
+            width: 120px;
+            height: 40px;
+            display:none;
+            position: absolute;
+            left:180px;
+            top:80px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label>用户名：</label><input id="user" type="text"/>
+    <span id="usertip"></span>
+    <label class="mar">密&nbsp;码：</label><input  class="mar"  id="pass" type="password"/>
+    <label class="mar">在输一次：</label><input  class="mar"  id="re" type="password"/>
+    <span id="passwordtip"></span>
+    <input class="mar" id="sure" type="button" value="确定"/>
+</form>
+<script>
+    var txt=document.getElementById("user");
+    var pass=document.getElementById("pass");
+    var re=document.getElementById("re");
+    var sure=document.getElementById("sure");
+    var usertip=document.getElementById("usertip");
+    var passwordtip=document.getElementById("passwordtip");
+    txt.onblur=function(){
+           var user = txt.value;
+           var reg=/^[a-zA-Z_]{3,}/;
+           if(reg.test(user)==false){
+               usertip.innerHTML="用户名必须是以字母或者下划线开头,至少3位";
+               usertip.style.display="block";
+           }else{
+               usertip.style.display="none";
+               var xmlHttp;
+               if(window.XMLHttpRequest){
+                   xmlHttp=new XMLHttpRequest();
+               }else{
+                   xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+               }
+               xmlHttp.onreadystatechange=function(){
+                   if(xmlHttp.readyState==4){
+                       if(xmlHttp.status==200){
+                           var result=eval("("+xmlHttp.responseText+")");
+                           if(result==1){
+                               usertip.innerHTML="用户名已存在";
+                               usertip.style.display="block";
+                           }else{
+                               usertip.style.display="none";
+                           }
+                       }else{
+                           alert("未获取到");
+                       }
+                   }
+               }
+               xmlHttp.open("post", "http://localhost:8080/user/CheckUserName", true);
+               xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+               xmlHttp.send("username="+user);
+           }
+    }
+    pass.onblur=function(){
+        var passvalue=pass.value;
+        var reg=/.{6,}/;
+        if(reg.test(passvalue)==false){
+            passwordtip.innerHTML="密码至少6位";
+            passwordtip.style.display="block";
+        }else{
+            passwordtip.style.display="none";
+        }
+    }
+    sure.onclick=function(){
+        if(re.value==pass.value){
+                passwordtip.style.display="none";
+                var xmlHttp;
+                var user = txt.value;
+                var passValue=pass.value;
+                if(window.XMLHttpRequest){
+                    xmlHttp=new XMLHttpRequest();
+                }else{
+                    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlHttp.onreadystatechange=function(){
+                    if(xmlHttp.readyState==4){
+                        if(xmlHttp.status==200){
+                            var result=eval("("+xmlHttp.responseText+")");
+                            if(result==1){
+                                alert("注册成功");
+                            }
+                            else{
+                                alert("失败");
+                            }
+                        }else{
+                            alert("未获取到");
+                        }
+                    }
+                }
+                xmlHttp.open("post", "http://localhost:8080/user/register", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("name="+user+"&password="+passValue);
+
+        }else{
+            passwordtip.innerHTML="密码不一致";
+            passwordtip.style.display="block";
+        }
+    }
+</script>
+</body>
+</html>

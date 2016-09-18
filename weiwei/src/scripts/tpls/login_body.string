@@ -1,0 +1,16 @@
+<!--**********con****************-->
+<div id="registbox">
+    <div class="registcon">
+        <h3>欢迎登录微微新娘网站<a href="regist.html">注册</a></h3>
+        <div class="userName">
+            <label>用户名：</label>
+            <input id="user" type="text" />
+        </div>
+        <span id="usertip">用户名不存在请注册</span>
+        <div class="userPass">
+            <label>密&nbsp;码：</label>
+            <input id="pass" type="password"/>
+        </div>
+        <span id="btn">登录</span>
+    </div>
+</div>

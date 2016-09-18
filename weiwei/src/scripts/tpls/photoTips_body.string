@@ -1,0 +1,15 @@
+<div id="conBox">
+    <div class="mainCon">
+        <ul class="conList">
+        </ul>
+    </div>
+    <div id="pageturn">
+        <button>上一页</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>下一页</button>
+        <span>共10页140条</span>
+    </div>
+</div>

@@ -1,0 +1,158 @@
+@charset "UTF-8";body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend{margin:0;padding:0}
+img{border:0;display:block}
+li{list-style:none}
+a{text-decoration:none}
+body{font:12px "微软雅黑"}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal}
+i,em{font-style:normal}
+html,body{height:100%}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden}
+#header{position:fixed;top:0;width:100%;height:120px;background:url(/weiwei/img/icon/topbg.jpg) repeat-x;z-index:10000000}
+.header_con{width:1024px;position:absolute;left:0;right:0;margin:auto}
+.logo{position:absolute;width:150px;left:0;top:0;float:left}
+.header_right{float:left;width:832px;position:absolute;top:0;left:167px}
+.header_link{width:268px;float:right;padding:10px 0 25px 0}
+.header_link li{padding-left:5px;float:left}
+.icon3 i{float:left;color:#fb383c;width:57px;height:21px;font-size:14px}
+.icon3 em{float:right;width:123px;height:18px;background:url("/weiwei/img/icon/tel.png") no-repeat}
+#header_nav{clear:both;width:801px;height:30px;margin-left:30px;background:url("/weiwei/img/icon/nav_bg.jpg") no-repeat}
+#header_nav li{float:left;height:30px}
+#header_nav p{color:#999;font-size:10px}
+#header_nav a{float:left;width:133px;font-size:14px;color:#333;text-align:center}
+#foot{color:#fff;background:#ba292e;clear:both}
+#foot .footwrap{height:260px;background:url("/weiwei/img/icon/contuctus_02.png") no-repeat center}
+#foot .foot1{width:1024px;margin:0 auto}
+#foot .foot1 .contact{padding-top:15px;padding-bottom:68px;width:310px;margin-left:405px}
+#foot .foot1 .contact li{float:left;margin-right:48px}
+#foot .foot1 .contact a{float:left}
+#foot .foot1 .stress{margin-top:60px;width:1000px;height:97px;padding-top:30px;font-size:14px;border-bottom:1px solid #fff;border-top:1px solid #fff}
+#foot .foot1 .stress dl{float:left;width:250px;height:58px}
+#foot .foot1 .stress dt{float:left}
+#foot .foot1 .stress dd{margin-left:10px;float:left}
+#foot .foot1 .stress dd .phone{display:block;color:#fff;font-size:16px;font-weight:900;line-height:26px}
+#foot .foot1 .stress dd .phone:hover{color:yellow}
+#foot .foot1 .stress dd .method{height:25px}
+#foot .foot1 .foot_nav{height:180px}
+#foot .foot1 .foot_nav .nav_left{width:320px;float:left;margin-top:72px}
+#foot .foot1 .foot_nav .nav_left li{float:left;width:103px;height:38px}
+#foot .foot1 .foot_nav .nav_left a{color:#fff;float:left}
+#foot .foot1 .foot_nav .nav_right{float:right;margin-top:28px}
+#foot .foot1 .foot_nav .nav_right li{float:left;margin-right:28px}
+#foot .foot2{height:210px;background:#202124;margin:23px auto 0}
+#foot .foot2_con{width:1024px;margin:0 auto;padding-top:30px}
+#foot .foot2_con p{text-align:center;color:#5a5a5a;line-height:28px}
+#foot .foot2_con .foot_link{width:1024px;margin-top:20px}
+#foot .foot2_con .foot_link span{float:left;height:40px;padding:0 30px 0 30px;text-align:left;color:#ccc}
+#foot .foot2_con .links{float:right;width:900px}
+#foot .foot2_con .links a{padding:5px;font-size:12px;color:#666;line-height:14px}
+#main_body{height:auto;margin-top:56px}
+.fullwidthbanner-container{width:100%!important;position:relative;padding:0;max-height:800px!important;overflow:hidden}
+.fullwidthbanner-container .fullwidthabnner{width:100%!important;max-height:748px!important;position:relative;overflow:hidden}
+@media only screen and (min-width:768px) and (max-width:959px){.banner,.bannercontainer{width:768px;height:309px}
+}
+@media only screen and (min-width:480px) and (max-width:767px){.banner,.bannercontainer{width:480px;height:193px}
+}
+@media only screen and (min-width:320px) and (max-width:479px){.banner,.bannercontainer{width:320px;height:129px}
+}
+@media only screen and (max-width:319px){.banner,.bannercontainer{width:240px;height:97px}
+}
+.tp-bullets.simplebullets.round .bullet:hover,.tp-bullets.simplebullets.round .bullet.selected,.tp-bullets.simplebullets.navbar .bullet:hover,.tp-bullets.simplebullets.navbar .bullet.selected{background:#e1472f!important}
+.tp-leftarrow:hover,.tp-rightarrow:hover{background-color:#e1472f!important}
+.tp-bullets{z-index:1001;position:absolute;margin-bottom:25px}
+.tp-bullets.simplebullets.round .bullet{cursor:pointer;position:relative;background:#fff;margin-left:15px;float:left;-webkit-border-radius:17px;-moz-border-radius:17px;border-radius:17px;background:transparent;border:1px #fff solid;display:inline-block;_display:block;*display:block;width:19px;height:19px}
+.tp-leftarrow.large{z-index:100;cursor:pointer;position:relative;background:#393939 url(/weiwei/img/icon/slider-left-arrow.png) no-Repeat;width:42px;height:43px;margin-left:0;margin-top:-21px;-webkit-transition:background .1s linear;-moz-transition:color,background .1s linear;-o-transition:color,background .1s linear;transition:color,background .1s linear;box-shadow:0 0 10px 0 rgba(0,0,0,0.3)}
+.tp-rightarrow.large{z-index:100;cursor:pointer;position:relative;background:#393939 url(/weiwei/img/icon/slider-right-arrow.png) no-Repeat 0 0;width:42px;height:43px;margin-left:0;margin-top:-21px;-webkit-transition:background .1s linear;-moz-transition:color,background .1s linear;-o-transition:color,background .1s linear;transition:color,background .1s linear;box-shadow:0 0 10px 0 rgba(0,0,0,0.3)}
+.tp-bullets.tp-thumbs{z-index:100;position:absolute;padding:3px;background-color:#fff;width:500px;height:50px;margin-top:-50px}
+.fullwidthbanner-container .tp-thumbs{padding:3px}
+.tp-bullets.tp-thumbs .tp-mask{width:500px;height:50px;overflow:hidden;position:relative}
+.tp-bullets.tp-thumbs .tp-mask .tp-thumbcontainer{width:5000px;position:absolute}
+.tp-bullets.tp-thumbs .bullet{width:100px;height:50px;cursor:pointer;overflow:hidden;background:0;margin:0;float:left;-ms-filter:"alpha(opacity=50)";-moz-opacity:.5;-khtml-opacity:.5;opacity:.5;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-o-transition:all .2s ease-out;-ms-transition:all .2s ease-out}
+.tp-bullets.tp-thumbs .bullet:hover,.tp-bullets.tp-thumbs .bullet.selected{-ms-filter:"alpha(opacity=100)";-moz-opacity:1;-khtml-opacity:1;opacity:1}
+.tp-thumbs img{width:100%}
+.tp-bannertimer{width:100%;height:10px;position:absolute;z-index:200;z-index:5000}
+.tp-bannertimer.tp-bottom{bottom:0!important;height:5px}
+@media only screen and (min-width:480px) and (max-width:767px){.responsive .tp-bullets.tp-thumbs{width:300px!important;height:30px!important}
+.responsive .tp-bullets.tp-thumbs .tp-mask{width:300px!important;height:30px!important}
+.responsive .tp-bullets.tp-thumbs .bullet{width:60px!important;height:30px!important}
+}
+@media only screen and (min-width:0) and (max-width:479px){.responsive .tp-bullets{display:none}
+.responsive .tparrows{display:none}
+}
+.tp-simpleresponsive img{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none}
+.tp-simpleresponsive a{text-decoration:none}
+.tp-simpleresponsive ul{list-style:none;padding:0;margin:0}
+.tp-simpleresponsive>ul>li{list-stye:none;position:absolute;visibility:hidden}
+.caption.slidelink a div,.tp-caption.slidelink a div{width:10000px;height:10000px}
+.tp-loader{background:url(/weiwei/img/icon/loader.gif) no-repeat 10px 10px;background-color:#fff;margin:-22px -22px;top:50%;left:50%;z-index:10000;position:absolute;width:44px;height:44px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}
+.activity_title{width:100%;height:65px;margin-top:50px;border-top:1px solid #999;position:relative;border-bottom:1px solid #999}
+.title_wrap{width:1026px;height:65px;margin:0 auto;border-right:1px solid #999;border-left:1px solid #999;position:relative}
+.tit01{display:block;width:998px;height:54px;position:absolute;top:-45px;left:0;right:0;margin:auto}
+#wrap_content{width:1024px;margin:0 auto;padding-top:38px}
+.lookpp{position:relative}
+.lookpp2{width:1000px;height:568px;line-height:26px;overflow:hidden}
+#box5{left:338px;top:0}
+#box6{left:676px;top:0}
+#box7{left:0;top:284px}
+#box8{left:338px;top:284px}
+#box9{left:676px;top:284px}
+.grid{margin:0 auto;width:1000px}
+.big .thumbs .list-wrapper{margin-top:15px;position:relative}
+.big.thumbs .list-item{width:324px;height:270px;overflow:hidden;position:absolute;cursor:pointer}
+.activity_link{width:1024px;height:65px;padding-top:30px}
+.activity_tel{float:left;width:237px}
+.activity_qq{float:left;padding-left:6px;width:757px;background:url("/weiwei/img/icon/sanjiao.jpg") no-repeat left center;border-bottom:1px solid #dcdcdc}
+.activity_qq a{line-height:65px;color:#333}
+#workshow{margin-top:30px;background:#f0f5f8;height:2067px;padding-top:45px}
+.work_title{width:100%;height:65px;margin-top:50px;border-top:1px solid #999;position:relative;border-bottom:1px solid #999}
+.smalltitle{text-align:center;width:532px;background:#f0f5f8;position:absolute;left:0;right:0;margin:auto;bottom:-1px;font-size:16px;color:#0000ef}
+.smalltitle:hover{color:#333}
+.smalltitle span{color:#fb383c}
+.work_more{width:46px;height:46px;background:url("/weiwei/img/icon/p_more.jpg");position:absolute;right:10px;top:10px}
+.work_con{padding-top:16px;width:1026px;margin:0 auto}
+.dlbox{display:block;background:#f2f2f2;width:325px;height:444px;float:left;margin:10px 0 0 8px;color:#333;cursor:pointer}
+.dlbox:hover{background:red;color:#fff}
+.dlbox dl{float:left;width:325px;height:444px}
+.dlbox dt{width:303px;height:303px;padding:5px 0 0 5px}
+.dlbox img{border:0;width:313px;height:313px;text-align:center}
+.dlbox p{margin:25px 0 0 17px;line-height:24px;font-size:16px}
+.dlbox span{margin-left:17px;font-size:12px}
+.studio{width:1024px;margin:0 auto;padding-top:50px;overflow:hidden}
+.studio_title{width:1024px;text-align:center;margin-left:443px;font-size:16px;color:#7f00ee}
+.studio_title span{color:#fb383c}
+.studio_title:hover{color:#333}
+#guest{padding-top:58px;height:1092px}
+.guest_title{width:100%;height:65px;margin-top:50px;border-top:1px solid #999;position:relative;border-bottom:1px solid #999}
+#shooting{padding-top:58px;height:1052px;background:#f0f5f8}
+.shooting_title{width:100%;height:65px;margin-top:50px;border-top:1px solid #999;position:relative;border-bottom:1px solid #999}
+#photo{padding-top:58px;background:#f0f5f8}
+.photo_title{width:100%;height:65px;margin-top:50px;border-top:1px solid #999;position:relative;border-bottom:1px solid #999}
+.photo_con{width:1024px;height:776px;margin:0 auto;position:relative;background:url("/weiwei/img/conimg/p_bg.jpg") no-repeat center}
+.price_link1{width:174px;height:174px;background:url("/weiwei/img/icon/p_03.jpg") no-repeat;position:absolute;left:0;top:180px;color:#fff}
+.price_link1 p{font-size:22px;position:absolute;left:42px;top:45px}
+.price_link1 span{position:absolute;left:20px;top:90px}
+.price_link2 a{display:block;width:170px;height:170px;color:#fb383c;background:url("/weiwei/img/icon/photo.png");background-position:0 -170px;position:absolute;left:214px;top:230px}
+.photo_con a:hover{background:url("/weiwei/img/icon/photo.png")}
+.photo_con a:hover span{color:#fff}
+.price{display:block;font-size:30px;color:#fb383c;padding-top:44px;text-align:center;font-family:Georgia;font-weight:800;letter-spacing:-2px}
+.name{font-size:18px;display:block;padding-top:15px;text-align:center;font-weight:800}
+.price_link3 a{display:block;width:170px;height:170px;color:#fb383c;background:url("/weiwei/img/icon/photo.png");background-position:0 -170px;position:absolute;left:424px;top:280px}
+.price_link4 a{display:block;width:170px;height:170px;color:#fb383c;background:url("/weiwei/img/icon/photo.png");background-position:0 -170px;position:absolute;left:638px;top:330px}
+.price_link5 a{display:block;width:170px;height:170px;color:#fb383c;background:url("/weiwei/img/icon/photo.png");background-position:0 -170px;position:absolute;left:274px;top:430px}
+.price_link6 a{display:block;width:170px;height:170px;color:#fb383c;background:url("/weiwei/img/icon/photo.png");background-position:0 -170px;position:absolute;left:484px;top:480px}
+.price_link7 a{display:block;width:170px;height:170px;color:#fb383c;background:url("/weiwei/img/icon/photo.png");background-position:0 -170px;position:absolute;left:698px;top:530px}
+.work_more2{width:46px;height:46px;background:url("/weiwei/img/icon/more.jpg");position:absolute;right:10px;top:10px}
+#phototips{padding-top:58px;height:640px}
+.phototips_title{width:100%;height:65px;margin-top:50px;border-top:1px solid #999;position:relative;border-bottom:1px solid #999}
+.wrap{width:534px;height:2px;background:#fff;position:absolute;bottom:-1px;left:258px}
+.phototips_con{width:994px;height:371px;margin:0 auto;padding:50px 0 0 30px}
+.phototips_con li{width:248px;height:371px;float:left}
+.newstitle{width:200px;height:63px;display:inline-block;text-align:center;font-size:10px;line-height:74px;background:url("/weiwei/img/icon/crs_a.jpg")}
+.newsimg{display:block;margin-top:4px}
+.newsimg img{display:block;width:200px;height:200px;border:0}
+.newscon{width:200px;text-align:center}
+.newscon h3{font-size:12px;color:#000;margin-top:12px;font-weight:600}
+.newscon p{color:#666;font-size:12px;line-height:22px}
+.newscon a{display:inline-block;width:77px;height:28px;border:1px solid #999;color:#666;text-align:center;line-height:28px;margin-top:8px}
+.newscon a:hover{background:red;color:#fff;border:1px solid red}
+#silderbar{position:fixed;right:20px;top:30%;background:url(/weiwei/img/icon/left-nav-bj.png) no-repeat center;width:80px;height:241px;z-index:9995;padding-top:63px;text-align:left!important}
+#silderbar a{display:block;width:80px;height:24px}

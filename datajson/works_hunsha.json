@@ -1,0 +1,50 @@
+[
+  {
+    "id":1,
+    "current":"d1",
+    "date":"16-07-17",
+    "name": "薇薇新娘·隽逸国色",
+    "pCon": "海上生明月，天涯共此时。情人怨遥夜，竟夕起相思。",
+    "imgSrc":"wshun11&wshun12&wshun13&wshun14&wshun15&wshun16"
+  },
+  {
+    "id":2,
+    "current":"d2",
+    "date":"16-07-17",
+    "name": "薇薇新娘·iBride",
+    "pCon": "柔情似水，佳期如梦，忍顾鹊桥归路。两情若是久长时，又岂在朝朝暮暮。",
+    "imgSrc":"wshun21&wshun22&wshun23&wshun24&wshun25&wshun26&wshun27&wshun28"
+  },
+  {
+    "id":3,
+    "current":"d3",
+    "date":"16-07-17",
+    "name": "薇薇新娘·薇兹花园",
+    "pCon": "相爱是一种感觉，一种须用两颗心去体验和感受，才能体会出那跌宕起伏的美丽。有你在左，给我浪漫爱情；有我在右，许你幸福一生。",
+    "imgSrc":"wshun31&wshun32&wshun33&wshun34&wshun35&wshun36&wshun37&wshun38&wshun39"
+  },
+  {
+    "id":4,
+    "current":"d4",
+    "date":"16-07-17",
+    "name": "薇薇新娘·Love Is...",
+    "pCon": "因为爱，所以我心始终相信你，我要把我生命里所有的爱都通通留给你，那是我生命中最最宝贵的东西，让我只想把这份柔情揉进你的心里……",
+    "imgSrc":"wshun41&wshun42&wshun43&wshun44&wshun45&wshun46&wshun47&wshun48&wshun49&wshun410"
+  },
+  {
+    "id":5,
+    "current":"d5",
+    "date":"16-07-17",
+    "name": "薇薇新娘·只有爱",
+    "pCon": "在我的心里面，对你，除了爱就只有爱，满满的全是爱。",
+    "imgSrc":"wshun51&wshun52&wshun53&wshun54&wshun55&wshun56&wshun57&wshun58&wshun59&wshun510&wshun511&wshun512"
+  },
+  {
+    "id":6,
+    "current":"d6",
+    "date":"16-07-17",
+    "name": "薇薇新娘·简爱",
+    "pCon": "提起笔，写下三个字“亲爱的”就不知道该写些什么了，因为想念很丰富，丰富的随时随刻充盈脑际；问候很丰富，丰富的无时不刻想知道你的信息；表达很丰富，丰富的无边无际充满爱意。其实，我们的爱很简单：亲爱的，你好吗，我爱你！",
+    "imgSrc":"wshun61&wshun62&wshun63&wshun64&wshun65&wshun66&wshun67&wshun68&wshun69&wshun610&wshun611&wshun612&wshun613&wshun613&wshun615&wshun616"
+  }
+]

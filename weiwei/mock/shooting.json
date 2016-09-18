@@ -1,0 +1,49 @@
+[
+  {
+    "id":1,
+    "current":"s1",
+    "date":"16-07-17",
+    "name": "薇薇新娘·卢浮迷情",
+    "pCon": " 卢浮的浪漫无需赘述，只要放慢脚步感受它最原始的风情。去掉那些浮夸的修饰，只是因为单纯的喜欢而选择。用心感受那无法言喻的浪漫氛围，时尚奢华的视觉冲击，凝固您永恒的浪漫回忆。",
+    "imgSrc":"shoot11&shoot12&shoot13&shoot14&shoot15&shoot16&shoot17&shoot18&shoot19&shoot110"
+  },
+  {"id":2,
+    "current":"s2",
+    "date":"16-07-17",
+    "name": "薇薇新娘·凡尔赛玫瑰",
+    "pCon": " 铺满玫瑰的凡尔赛宫，用华丽浓烈的红色倾诉彼此间炙热的爱恋，刺血玫瑰的纯粹热烈，芬芳了一整个世纪。瑰丽古老的皇宫依然，绚璨多姿的玫瑰永恒，置身其中,脑海中自然萦绕出绚丽多姿的玫瑰和华美流转的爱情故事.",
+    "imgSrc":"shoot21&shoot22&shoot23&shoot24&shoot25"
+  },
+  {
+    "id":3,
+    "current":"s3",
+    "date":"16-07-17",
+    "name": "薇薇新娘·巴洛克宫",
+    "pCon": " 奢华的巴洛克宫，充满激情与复古的艺术气息，打破理性的宁静与和谐，散发出浓郁的浪漫主义色彩。带她一起——追求自由奔放的格调、脱离世俗情趣的浪漫，在匆匆时光里留下一抹浅浅的背影！",
+    "imgSrc":"shoot31&shoot32&shoot33&shoot34&shoot35&shoot36&shoot37"
+  },
+  {
+    "id":4,
+    "current":"s4",
+    "date":"16-07-17",
+    "name": "薇薇新娘·巴黎时光",
+    "pCon": " 一个只有奢华与享乐的梦想之地，揭开了品味与时尚的魅力之谜。唯美的场景、浪漫的传说，无不引人入胜，仿佛是在时光的幻影中流连、沉沦，甚至迷失了自己。",
+    "imgSrc":"shoot41&shoot42&shoot43&shoot44&shoot45&shoot46&shoot47&shoot48&shoot49&shoot410&shoot411&shoot412"
+  },
+  {
+    "id":5,
+    "current":"s5",
+    "date":"16-07-17",
+    "name": "爱情海Ⅴ",
+    "pCon": "一个只有奢华与享乐的梦想之地，揭开了品味与时尚的魅力之谜。",
+    "imgSrc":"shoot51&shoot52&shoot53&shoot54&shoot55&shoot56&shoot57&shoot58&shoot59&shoot510&shoot511"
+  },
+  {
+    "id":6,
+    "current":"s6",
+    "date":"16-07-17",
+    "name": "凤凰谷外景·爱的告白",
+    "pCon": " 你知道吗？抚仙湖边上有一个地方，洋溢青春的活力；你知道吗？抚仙湖边上有一个地方，用艺术展示着永恒的瞬间；你知道吗？抚仙湖边上有一个地方，用心灵和视觉去审美，去表述~~",
+    "imgSrc":"shoot61&shoot62&shoot63&shoot64&shoot65&shoot66&shoot67&shoot68&shoot69&shoot610&shoot611&shoot612&shoot613&shoot614&shoot615&shoot616&shoot617&shoot618"
+  }
+]

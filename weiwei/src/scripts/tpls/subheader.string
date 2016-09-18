@@ -1,0 +1,21 @@
+<!--**********header****************-->
+<div id="header">
+    <div class="header_con">
+        <h1 class="logo"><a href="#"><img src="/weiwei/img/icon/logo.png"/></a></h1>
+        <div class="header_right">
+            <ul class="header_link">
+                <li><a href="#"><img src="/weiwei/img/icon/icon01.png"/></a></li>
+                <li><a href="#"><img src="/weiwei/img/icon/icon02.png"/></a></li>
+                <li class="icon3"><i>幸福热线</i><em></em></li>
+            </ul>
+            <ul id="header_nav">
+                <li><a href="/weiwei/index.html">首页<p>Home</p></a></li>
+                <li><a href="/weiwei/html/worksAppreciation.html">作品展示<p>.........</p></a></li>
+                <li><a href="/weiwei/html/worksAppreciation.html">客片展示<p>.........</p></a></li>
+                <li><a href="/weiwei/html/guestApplication.html">拍摄场景<p>.........</p></a></li>
+                <li><a href="/weiwei/index.html#photo">摄影报价<p>.........</p></a></li>
+                <li><a href="/weiwei/html/photoTips.html">拍摄技巧<p>.........</p></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

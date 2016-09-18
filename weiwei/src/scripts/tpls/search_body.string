@@ -1,0 +1,36 @@
+<div class="conBox">
+    <div class="conTitle">
+        <input type="text" id="keywords"/>
+        <input type="button" value="搜索" id="seBtn"/>
+    </div>
+    <div class="content">
+        <ul class="search_title">
+            <li>排序方式：</li>
+            <li><span class="sortRule">默认<i></i></span></li>
+            <li><span class="sortRule">销量<i></i></span></li>
+            <li><span class="sortRule">人气<i></i></span></li>
+            <li><span class="sortRule">价格<i></i></span></li>
+           <div id="price">
+               <input id="min_price" value="￥" type="text">
+               <em>-</em>
+               <input id="max_price" value="￥" type="text">
+           </div>
+           <button id="sure">确定</button>
+           <div class="pageturn">
+               <button>上一页</button>
+               <button>下一页</button>
+           </div>
+        </ul>
+        <div class="search_con">
+            <!--<a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="../img/d1.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·隽逸国色</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>-->
+        </div>
+    </div>
+</div>

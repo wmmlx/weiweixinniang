@@ -1,0 +1,199 @@
+$pageWidth:1024px;
+/*----------------------------------*/
+$pageWidth:1024px;
+#header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:120px;
+  background:url(/weiwei/img/icon/topbg.jpg) repeat-x;
+  z-index:10000000;
+}
+.header_con{
+  width: 1024px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.logo{
+  position: absolute;
+  width: 150px;
+  left:0;
+  top: 0;
+  float: left;
+}
+.header_right{
+  float: left;
+  width: 832px;
+  position: absolute;
+  top: 0;
+  left:167px;
+}
+.header_link{
+  width: 268px;
+  float: right;
+  padding: 10px 0 25px 0;
+}
+.header_link li{
+  padding-left: 5px;
+  float: left;
+}
+.icon3 i{
+  float: left;
+  color:#fb383c;
+  width: 57px;
+  height: 21px;
+  font-size: 14px;
+}
+.icon3 em{
+  float: right;
+  width: 123px;
+  height: 18px;
+  background: url("/weiwei/img/icon/tel.png") no-repeat;
+}
+#header_nav{
+  clear: both;
+  width: 801px;
+  height: 30px;
+  margin-left: 30px;
+  background:url("/weiwei/img/icon/nav_bg.jpg") no-repeat;
+}
+#header_nav li{
+  float: left;
+  height:30px;
+}
+#header_nav p{
+  color: #999;
+  font-size: 10px;
+}
+#header_nav a{
+  float: left;
+  width: 133px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+/*----------------foot------------------*/
+#foot{
+  color: #fff;
+  background: #ba292e;
+  clear:both;
+  .footwrap {
+    height: 260px;
+    background: url("/weiwei/img/icon/contuctus_02.png") no-repeat center;
+  }
+  .foot1{
+    width: $pageWidth;
+    margin: 0 auto;
+    .contact{
+      padding-top: 15px;
+      padding-bottom: 68px;
+      width: 310px;
+      margin-left: 405px;
+      li{
+        float: left;
+        margin-right: 48px;
+      }
+      a{
+        float: left;
+      }
+    }
+    .stress{
+      margin-top: 60px;
+      width: 1000px;
+      height: 97px;
+      padding-top: 30px;
+      font-size: 14px;
+      border-bottom: 1px solid #fff;
+      border-top: 1px solid #fff;
+      dl{
+        float: left;
+        width: 250px;
+        height: 58px;
+      }
+      dt{
+        float: left;
+      }
+      dd{
+        margin-left: 10px;
+        float: left;
+        .phone{
+          display: block;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 900;
+          line-height: 26px;
+        }
+        .phone:hover{
+          color: yellow;
+        }
+        .method{
+          height: 25px;
+        }
+      }
+    }
+    .foot_nav{
+      height: 180px;
+      .nav_left{
+        width: 320px;
+        float: left;
+        margin-top: 72px;
+        li{
+          float: left;
+          width: 103px;
+          height:38px;
+        }
+        a{
+          color:#fff;
+          float: left;
+        }
+      }
+      .nav_right{
+        float: right;
+        margin-top: 28px;
+        li{
+          float: left;
+          margin-right: 28px;
+        }
+      }
+    }
+  }
+  .foot2{
+    height: 210px;
+    background: #202124;
+    margin: 23px auto 0;
+  }
+  .foot2_con{
+    width: $pageWidth;
+    margin: 0 auto;
+    padding-top: 30px;
+    p{
+      text-align: center;
+      color: #5a5a5a;
+      line-height: 28px;
+    }
+    .foot_link{
+      width: $pageWidth;
+      margin-top: 20px;
+    }
+    .foot_link span{
+      float: left;
+      height: 40px;
+      padding:0 30px 0 30px;
+      text-align: left;
+      color: #ccc;
+    }
+    .links{
+      float: right;
+      width:900px;
+      a{
+        padding: 5px;
+        font-size: 12px;
+        color: #666;
+        line-height: 14px;
+      }
+    }
+  }
+}

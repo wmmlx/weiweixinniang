@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.0.js"></script>
+</head>
+<body>
+    <button id="btn">获取</button>
+    <script>
+        $("#btn").click(function(){
+            $.ajax({
+                url:"../product/GetProductsByPage_get",
+                data:{
+                    "pagesize":30,
+                    "pageindex":4
+                },
+                success:function(data){
+                    //mock  array
+                    //document.write("<br/>")
+                    for(var i=0;i<data.length;i++){
+                        //把data 里面的string 主动转成对象；
+                        var dataObj=JSON.parse(data[i].Data);
+                        console.log(dataObj.imgsrc);
+                        console.log(dataObj.name);
+                        console.log(dataObj.date);
+                    }
+                },
+                dataType:"json"
+            })
+        })
+        function dw(data){
+            document.write(data);
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>

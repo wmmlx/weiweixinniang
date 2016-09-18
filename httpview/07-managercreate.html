@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建产品</title>
+    <script src="jquery-3.1.0.js"></script>
+</head>
+<body>
+<div>
+    <input type="text" id="txtid"/>
+    <input type="text" id="txtname"/>
+    <input type="text" id="txtprice"/>
+    <input type="text" id="txtimgsrc"/>
+    <input type="button" id="bt1" value="提交"/>
+    <script>
+        $("#bt1").click(function(){
+            var pName=$("#txtname").val();
+            var pId=$("#txtid").val();
+            var pPrice=$("#txtprice").val();
+            var pImgsrc=$("#txtimgsrc").val();
+
+            var dataJsonOb={
+                "id":pId,
+                "name":pName,
+                "price":pPrice,
+                "imgsrc":pImgsrc
+            }
+            var dataJsonStr=JSON.stringify(dataJsonOb);
+            $.ajax({
+                url:"../product/CreateUpdateProduct_post",
+                data:{
+                    "id":pId,
+                    "datajson":dataJsonStr
+                },
+                success:function(data){
+                    if(data==1){
+                        alert("创建成功");
+                    }else{
+                        alert("创建失败");
+                    }
+                },
+                error:function(){
+                    alert("ajax error");
+                },
+                dataType:"json",
+                type:"post"
+            })
+        });
+    </script>
+</div>
+</body>
+</html>

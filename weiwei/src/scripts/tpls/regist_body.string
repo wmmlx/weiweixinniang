@@ -1,0 +1,26 @@
+<!--**********con****************-->
+<div id="registbox">
+    <div class="registcon">
+        <h3>欢迎注册微微新娘网站<a href="login.html">登录</a></h3>
+        <div class="userName">
+            <label>用户名：</label>
+            <input id="user" type="text" />
+        </div>
+        <span id="usertip">用户名必须是以字母或者下划线开头,至少3位</span>
+        <div class="userPass">
+            <label>密&nbsp;码：</label>
+            <input id="pass" type="password"/>
+        </div>
+        <div class="surePass">
+            <label>确认密码：</label>
+            <input  id="re" type="password"/>
+        </div>
+        <span id="passwordtip">密码至少6位</span>
+        <span id="btn">提交注册</span>
+        <div class="agreement">
+            <input id="sureService" type="checkbox" checked/>
+            我已阅读并同意<a href="#">《薇薇新娘用户协议》</a>
+        </div>
+        <span id="serviceTip">请同意用户协议</span>
+    </div>
+</div>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        form{
+            width:200px;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            left: 500px;
+            top:200px;
+        }
+        a {
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 40px;
+            height: 20px;
+            background: #eee;
+            color: #000;
+        }
+        label{
+            width: 60px;
+            height: 20px;
+            float: left;
+        }
+        input{
+            width: 100px;
+            height: 20px;
+            float: left;
+        }
+        #login{
+            position: absolute;
+            left:540px;
+            top:280px;
+        }
+        #regist{
+            position: absolute;
+            left:620px;
+            top:280px;
+        }
+        .mar{
+            margin-top: 10px;
+        }
+        #usertip{
+            width: 120px;
+            height: 40px;
+            display: none;
+            position: absolute;
+            left:180px;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label>用户名：</label><input id="user" type="text"/>
+    <span id="usertip">用户名不存在请注册</span>
+    <label class="mar">密&nbsp;码：</label><input  class="mar"  id="pass" type="password"/>
+</form>
+<a id="login" href="#">登录</a>
+<a id="regist" href="01-regist.html">注册</a>
+<script>
+    var txt=document.getElementById("user");
+    var usertip=document.getElementById("usertip");
+    var pass=document.getElementById("pass")
+    var login=document.getElementById("login");
+    //var regist=document.getElementById("regist");
+    txt.onblur=function(){
+        var user = txt.value;
+        var xmlHttp;
+        if(window.XMLHttpRequest){
+            xmlHttp=new XMLHttpRequest();
+        }else{
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlHttp.onreadystatechange=function(){
+            if(xmlHttp.readyState==4){
+                if(xmlHttp.status==200){
+                    var result=eval("("+xmlHttp.responseText+")");
+                    if(result==-1){
+                        usertip.style.display="block";
+                    }else{
+                        usertip.style.display="none";
+                    }
+                }else{
+                    alert("未获取到");
+                }
+            }
+        }
+        xmlHttp.open("post", "http://localhost:8080/user/CheckUserName", true);
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send("username="+user);
+
+    }
+    login.onclick=function() {
+        var user = txt.value;
+        var passValue=pass.value;
+        var xmlHttp;
+        if(window.XMLHttpRequest){
+            xmlHttp=new XMLHttpRequest();
+        }else{
+            xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlHttp.onreadystatechange=function(){
+            if(xmlHttp.readyState==4){
+                if(xmlHttp.status==200){
+                    var result=eval("("+xmlHttp.responseText+")");
+                    if(result==1){
+                        alert("登录成功");
+                    }else{
+                        alert("失败");
+                    }
+                }else{
+                    alert("未获取到");
+                }
+            }
+        }
+        xmlHttp.open("post", "http://localhost:8080/user/login", true);
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send("name="+user+"&password="+passValue);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.conBox{
+  width: 1024px;
+  min-height: 800px;
+  margin: 120px auto 0px;
+}
+.conTitle{
+  width: 490px;
+  margin: 0 auto;
+  #keywords{
+    line-height: 24px;
+    color: #555;
+    width: 82%;
+    height: 24px;
+    float: left;
+    padding: 6px 1%;
+    border:1px solid #CF0A0A;
+    border-right: 0;
+  }
+  #seBtn{
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 600;
+    background-color: #CF0A0A;
+    width: 15%;
+    height: 38px;
+    float: left;
+    border: none;
+    cursor: pointer;
+  }
+}
+.content{
+  clear: both;
+  width: 1024px;
+  margin: 0 auto ;
+  padding-top: 40px;
+  min-height: 800px;
+  .search_title{
+    width: 1000px;
+    height: 38px;
+    margin: 0  auto;
+    padding: 0 6px;
+    background: #eee;
+    border: 1px solid #ebebeb;
+    li{
+      color: #666;
+      float: left;
+      line-height: 38px;
+      width: 60px
+    }
+    span{
+      cursor: pointer;
+      float: left;
+      width: 60px;
+      text-align: center;
+    }
+    i{
+      float: right;
+      margin-right: 10px;
+      background: url(/weiwei/img/icon/2014shop_background_img.png) no-repeat 0 -11px;
+      width: 7px;
+      height: 8px;
+      margin-top: 14px;
+    }
+    #price{
+      float: left;
+      margin-top: 8px;
+      input{
+        width: 40px;
+        height: 18px;
+        color: #ccc;
+        border: 1px solid #ccc;
+      }
+    }
+    #sure{
+      width: 50px;
+      color: white;
+      height: 28px;
+      font-size: 14px;
+      cursor: pointer;
+      background: red;
+      margin: 4px 0 0 10px;
+      border: 1px solid red;
+    }
+    .pageturn{
+      float: right;
+    }
+    .pageturn button{
+      width: 60px;
+      height: 28px;
+      background: #fff;
+      border: 1px solid #eee;
+      cursor: pointer;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+}
+.search_con{
+  height: auto;
+  padding: 40px 0;
+}

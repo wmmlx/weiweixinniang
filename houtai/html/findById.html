@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.0.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            width: 605px;
+            margin: 60px auto 0;
+            font-family: "微软雅黑";
+            border-collapse: collapse;
+        }
+        th{
+            width: 500px;
+            height: 60px;
+            font-size: 16px;
+            border: 1px solid #eee;
+        }
+        td{
+            width: 500px;
+            height: 60px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #eee;
+        }
+        img{
+            border: 0;
+            width: 60px;
+            height: 60px;
+        }
+        #box{
+            width: 320px;
+            border-radius: 5%;
+            height: 30px;
+            margin: 200px auto 0;
+        }
+        label{
+            width: 40px;
+            float: left;
+            height: 22px;
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+        input{
+            width: 205px;
+            height: 20px;
+            float: left;
+        }
+        #btn{
+            width: 50px;
+            height: 28px;
+            border: 0;
+            float: right;
+            background: #eee;
+            cursor: pointer;
+        }
+        .del{
+            cursor: pointer;
+        }
+        .edit{
+            text-decoration: none;
+            color: #222;
+        }
+        #header{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            color: #666;
+            font-size: 14px;
+            margin-left: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        #header a{
+            text-decoration: none;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <span>当前位置:</span>
+        <a href="#">客户管理</a>
+        <span>&gt;</span>
+        <a href="#">查询</a>
+    </div>
+    <div id="box">
+        <label>id:</label><input type="text" id="num"/>
+        <button id="btn">确定</button>
+    </div>
+<table>
+</table>
+
+<script>
+    var pid;
+    $("#btn").click(function(){
+        pid=$("#num").val();
+        if(pid==""){
+            alert("请输入商品Id");
+        }else{
+            getTableData(pid);
+        }
+
+    })
+    function getTableData(pid) {
+        $.ajax({
+            url: "/product/GetProductById_get?id=" + pid,
+            success: function (data) {
+                if(!data){
+                    alert("商品不存在");
+                }else{
+                    var dataJsonOB = JSON.parse(data.Data);
+                    loadImg(dataJsonOB);
+                }
+            },
+            error:function(){
+                alert("ajax错误");
+            },
+            dataType: "json"
+        });
+    }
+    function clearContent(){
+        $("table").empty();
+    }
+    function deleteProduct(productId){
+
+        $.ajax({
+            url:"/product/DeleteProductById_get?",
+            data:{
+                "id":productId
+            },
+            success:function(data){
+                if(data==1){
+                    alert("删除成功");
+                    clearContent()
+
+
+                }else{
+                    alert("删除失败");
+                }
+            },
+            error:function(){
+                alert("ajax error");
+            },
+            dataType:"json",
+            type:"get"
+        });
+    }
+    function loadImg(dataObj,dataid){
+        var str=$('<tr><th>imgsrc</th><th>name</th>'+
+                '<th>date</th> <th colspan="2">编辑</th></tr>'+
+                '<tr><td><img src="/img/'+dataObj.imgsrc+'"</td>'+
+                '<td>'+dataObj.name+'</td>'+
+                '<td>'+dataObj.date+'</td>'+
+                '<td><a class="edit" href="editproducts.html?id='+pid+'">修改</a></td>' +
+                '<td onclick="deleteProduct('+pid+')" class="del">删除</td></tr>')
+        $("table").append(str);
+    }
+</script>
+</body>
+</html>

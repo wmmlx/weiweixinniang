@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.0.js"></script>
+   <!-- <script src="../js/jquery.jBox-2.3.min.js"></script>-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            width: 605px;
+            margin: 60px auto 0;
+            font-family: "微软雅黑";
+            border-collapse: collapse;
+        }
+        th{
+            width: 500px;
+            height: 60px;
+            font-size: 16px;
+            border: 1px solid #eee;
+        }
+        td{
+            width: 500px;
+            height: 60px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #eee;
+        }
+        img{
+            border: 0;
+            width: 60px;
+            height: 60px;
+        }
+        #pageturn {
+            width: 650px;
+            margin: 80px auto 0;
+            height: 86px;
+            font-size: 12px;
+            float: right;
+            color: #666;
+        }
+        #pageturn button {
+            float: left;
+            border: 0;
+            background:#eee;
+            color: #222;
+            width: 30px;
+            height:30px;
+            margin: 0 4px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        #pageturn  .first{
+            width: 50px;
+        }
+        #pageturn .last{
+            width: 50px;
+        }
+        #pageturn span{
+            float: left;
+            line-height: 30px;
+            margin-left: 4px;
+        }
+        .del{
+            cursor: pointer;
+        }
+        .edit{
+            text-decoration: none;
+            color: #222;
+        }
+        #header{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            color: #666;
+            font-size: 14px;
+            margin-left: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        #header a{
+            text-decoration: none;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+   <span>当前位置:</span>
+    <a href="#">商品信息</a>
+    <span>&gt;</span>
+    <a href="#">编辑</a>
+</div>
+<table>
+    <tr>
+        <th>imgsrc</th>
+        <th>name</th>
+        <th>date</th>
+        <th colspan="2">编辑</th>
+    </tr>
+</table>
+<div id="pageturn">
+    <button class="first">上一页</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button class="last">下一页</button>
+    <span>共14页112条</span>
+</div>
+<script>
+    var pageturn=$("#pageturn").find("button");
+    var pageCnt;
+    var num;
+    init();
+    function init(){
+        pageCnt=1;
+        num=1;
+        judge();
+        changeStyle(num);
+        getTableData();
+    }
+    function getTableData(){
+        $.ajax({
+            url:"/product/GetProductsByPage_get",
+            data:{
+                "pagesize":8,
+                "pageindex":pageCnt
+            },
+            success:function(data){
+                for(var i=0;i<data.length;i++){
+                    var dataObj=JSON.parse(data[i].Data);
+                    var dataid=data[i].Id;
+                    loadImg(dataObj,dataid);
+                }
+                judge();
+                changeStyle(num);
+
+            },
+            dataType:"json"
+        });
+    }
+    for(var i=2;i<=3;i++){
+        pageturn[i].index=i;
+        pageturn[i].onclick=function(){
+            var p=parseInt(pageturn[this.index].innerHTML);
+            pageCnt=p;
+            num=this.index;
+            clearContent();
+            getTableData();
+        }
+    }
+    pageturn[0].onclick=function(){
+        pageCnt--;
+        clearContent();
+        getTableData();
+        num--;
+    }
+    pageturn[1].onclick=function(){
+        if(pageCnt<=2&&pageCnt>0){
+            var p=parseInt(pageturn[1].innerHTML);
+            pageCnt=p;
+            num=1;
+            clearContent();
+            getTableData();
+        }
+        if(pageCnt>2) {
+            num=2;
+            var p=parseInt(pageturn[1].innerHTML);
+            pageCnt=p;
+            clearContent();
+            getTableData();
+            for(var i=1;i<=4;i++){
+                pageturn[i].innerHTML=parseInt(pageturn[i].innerHTML)-1;
+            }
+        }
+    }
+    pageturn[4].onclick=function(){
+        var p=parseInt(pageturn[4].innerHTML);
+        pageCnt=p;
+        if(pageCnt==14){
+            num=4;
+        }else{
+            num=3;
+            for(var i=1;i<=4;i++){
+                pageturn[i].innerHTML=parseInt(pageturn[i].innerHTML)+1;
+            }
+        }
+        clearContent();
+        getTableData();
+    }
+    pageturn[5].onclick=function(){
+        num++;
+        pageCnt++;
+        clearContent();
+        getTableData();
+    }
+    function changeStyle(num){
+        for(var i=1;i<=4;i++){
+            pageturn[i].style.color="#333";
+        }
+        pageturn[num].style.color="red";
+    }
+    function judge(){
+        if(pageCnt==1){
+            pageturn[0].disabled="disabled";
+            pageturn[0].style.color="#999";
+        }else{
+            pageturn[0].removeAttribute("disabled");
+            pageturn[0].style.color="#222";
+        }
+        if(pageCnt==14){
+            pageturn[5].disabled="disabled";
+            pageturn[5].style.color="#999";
+        }else{
+            pageturn[5].removeAttribute("disabled");
+            pageturn[5].style.color="#222";
+        }
+    }
+    function clearContent(){
+        var product=$("table");
+        while(product[0].children[0].children.length>1){
+            product[0].children[0].removeChild(product[0].children[0].children[1]);
+        }
+    }
+    function deleteProduct(productId){
+        var r=confirm("确定删除吗？");
+        if(r==true){
+            $.ajax({
+                url:"/product/DeleteProductById_get?",
+                data:{
+                    "id":productId
+                },
+                success:function(data){
+                    if(data==1){
+                        alert("删除成功");
+                        clearContent()
+                        getTableData();
+
+                    }else{
+                        alert("删除失败");
+                    }
+                },
+                error:function(){
+                    alert("ajax error");
+                },
+                dataType:"json",
+                type:"get"
+            });
+        }
+       /* $.ajax({
+            url:"/product/DeleteProductById_get?",
+            data:{
+                "id":productId
+            },
+            success:function(data){
+                if(data==1){
+                    alert("删除成功");
+                    clearContent()
+                    getTableData();
+
+                }else{
+                    alert("删除失败");
+                }
+            },
+            error:function(){
+                alert("ajax error");
+            },
+            dataType:"json",
+            type:"get"
+        });*/
+    }
+    function loadImg(dataObj,dataid){
+        var str=$('<tr><td><img src="/img/'+dataObj.imgsrc+'"</td>'+
+                '<td>'+dataObj.name+'</td>'+
+                '<td>'+dataObj.date+'</td>'+
+                '<td><a class="edit" href="editproducts.html?id='+dataid+'">修改</a></td>' +
+                '<td onclick="deleteProduct('+dataid+')" class="del">删除</td></tr>')
+        $("table").append(str);
+    }
+</script>
+</body>
+</html>

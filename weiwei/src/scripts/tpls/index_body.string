@@ -1,0 +1,407 @@
+<div id="main_body">
+    <!--**********banner****************-->
+    <script type="text/javascript" src="/weiwei/js/jquery.banner.revolution.min.js"></script>
+    <script type="text/javascript" src="/weiwei/js/banner.js"></script>
+    <div class="fullwidthbanner-container">
+        <div class="fullwidthbanner">
+            <ul>
+                <li data-transition='3dcurtain-vertical' data-slotamount='15' data-masterspeed='300' data-link='#'> <img src='/weiwei/img/banner/1.jpg' /> </li>
+                <li data-transition='3dcurtain-horizontal' data-slotamount='15' data-masterspeed='300' data-link='#'><img src='/weiwei/img/banner/2.jpg' /> </li>
+                <li data-transition='3dcurtain-vertical' data-slotamount='15' data-masterspeed='300' data-link='html/banner.html'> <img src='/weiwei/img/banner/3.jpg' /> </li>
+            </ul>
+        </div>
+    </div>
+    <!--**********Activity****************-->
+    <div id="activity">
+        <div class="activity_title">
+            <div class="title_wrap">
+                <div class="tit01"><img src="/weiwei/img/icon/tit01.jpg"/></div>
+            </div>
+        </div>
+        <div id="wrap_content" class="mainframe">
+            <div class="lookpp">
+                <div class="lookpp2">
+                    <div id="con_two_1">
+                        <div class="section-2_con">
+                            <script type="text/javascript" src="/weiwei/js/ccw.grid.js"></script>
+                            <div class="thumbs grid big">
+                                <div class="list-wrapper">
+                                    <div id='box5' class='list-item'> <a href='#' target="_blank"> <img src='/weiwei/img/conimg/05.jpg'  alt='预付100送3000好礼' width='554' height='554' border='0' /></a> </div>
+                                    <div id='box6' class='list-item'> <a href='#' target="_blank"> <img src='/weiwei/img/conimg/555.jpg'  alt='508元 时尚消费的一万个理由' width='554' height='554' border='0' /></a> </div>
+                                    <div id='box7' class='list-item'> <a href='#' target="_blank"> <img src='/weiwei/img/conimg/04.jpg'  alt='10月档期仅余数席 手慢无' width='554' height='554' border='0' /></a> </div>
+                                    <div id='box8' class='list-item'> <a href='#' target="_blank"> <img src='/weiwei/img/conimg/03.jpg'  alt='转介绍有好礼' width='554' height='554' border='0' /></a> </div>
+                                    <div id='box9' class='list-item'> <a href='#' target="_blank"> <img src='/weiwei/img/conimg/02.jpg'  alt='网络订单有豪礼' width='554' height='554' border='0' /></a> </div>
+                                    <div id='box10' class='list-item'> <a href='#' target="_blank"> <img src='/weiwei/img/conimg/01.jpg'  alt='薇薇新娘每日客片欣赏' width='554' height='554' border='0' /></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="activity_link">
+                <div class="activity_tel"><img src="/weiwei/img/icon/tel02.jpg"/></div>
+                <div class="activity_qq">
+                    <a href="#">完美嫁给你 定婚纱立减1111元 再送1111元礼包</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**********VIVIBRIDE WORK ****************-->
+    <div id="workshow">
+        <div class="work_title">
+            <div class="title_wrap">
+                <a href="html/worksAppreciation.html" class="tit01"><img src="/weiwei/img/icon/tit03.jpg"/></a>
+                <a class="work_more" href="html/worksAppreciation.html"></a>
+                <a href="html/worksAppreciation.html" class="smalltitle"><span>婚纱</span>作品欣赏</a>
+            </div>
+        </div>
+        <div class="work_con hunsha">
+            <!--<a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="img/d1.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·隽逸国色</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>
+            <a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="img/d2.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·iBride</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>
+            <a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="img/d3.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·薇兹花园</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>
+            <a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="img/d4.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·Love Is...</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>
+            <a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="img/d5.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·只有爱</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>
+            <a href="#" class="dlbox">
+                <dl>
+                    <dt><img src="img/d6.jpg"/></dt>
+                    <dd>
+                        <p>薇薇新娘·简爱</p>
+                        <span>16-07-14</span>
+                    </dd>
+                </dl>
+            </a>-->
+        </div>
+        <div class="clear"></div>
+        <div class="studio">
+            <a href="html/worksAppreciation.html#yishu" class="studio_title"><span>艺术写真</span>作品欣赏</a>
+            <div class="work_con xiezhen">
+                <!--       <a href="#" class="dlbox">
+                           <dl>
+                               <dt><img src="img/w1.jpg"/></dt>
+                               <dd>
+                                   <p>薇薇新娘·放牛班的春天</p>
+                                   <span>16-07-14</span>
+                               </dd>
+                           </dl>
+                       </a>
+                       <a href="#" class="dlbox">
+                           <dl>
+                               <dt><img src="img/w2.jpg"/></dt>
+                               <dd>
+                                   <p>薇薇新娘·布鲁斯班</p>
+                                   <span>16-07-14</span>
+                               </dd>
+                           </dl>
+                       </a>
+                       <a href="#" class="dlbox">
+                           <dl>
+                               <dt><img src="img/w3.jpg"/></dt>
+                               <dd>
+                                   <p>薇薇新娘·浪漫满屋</p>
+                                   <span>16-07-17</span>
+                               </dd>
+                           </dl>
+                       </a>
+                       <a href="#" class="dlbox">
+                           <dl>
+                               <dt><img src="img/w4.jpg"/></dt>
+                               <dd>
+                                   <p>薇薇新娘·漫花境地</p>
+                                   <span>16-07-17</span>
+                               </dd>
+                           </dl>
+                       </a>
+                       <a href="#" class="dlbox">
+                           <dl>
+                               <dt><img src="img/w5.jpg"/></dt>
+                               <dd>
+                                   <p>薇薇新娘·新派女郎</p>
+                                   <span>16-07-17</span>
+                               </dd>
+                           </dl>
+                       </a>
+                       <a href="#" class="dlbox">
+                           <dl>
+                               <dt><img src="img/w6.jpg"/></dt>
+                               <dd>
+                                   <p>薇薇新娘·大妞时代</p>
+                                   <span>16-07-14</span>
+                               </dd>
+                           </dl>
+                       </a>-->
+            </div>
+        </div>
+    </div>
+    <!--**********VIVIBRIDE GUEST****************-->
+    <div id="guest">
+        <div class="guest_title">
+            <div class="title_wrap">
+                <a href="html/worksAppreciation.html" class="tit01"><img src="/weiwei/img/icon/tit04.jpg"/></a>
+                <a class="work_more2" href="html/worksAppreciation.html"></a>
+            </div>
+        </div>
+        <div class="work_con guest">
+            <!-- <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/g1.jpg"/></dt>
+                     <dd>
+                         <p>德钰&楠楠Ⅰ【基地内景】</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/g2.jpg"/></dt>
+                     <dd>
+                         <p>德钰&楠楠Ⅰ【基地内景】</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/g3.jpg"/></dt>
+                     <dd>
+                         <p>德钰&楠楠Ⅰ【基地内景】</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/g4.jpg"/></dt>
+                     <dd>
+                         <p>李先生&段小姐Ⅱ【近郊外景</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/g5.jpg"/></dt>
+                     <dd>
+                         <p>李先生&段小姐Ⅱ【近郊外景</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/g6.jpg"/></dt>
+                     <dd>
+                         <p>李先生&段小姐Ⅱ【近郊外景</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>-->
+        </div>
+    </div>
+    <!--**********VIVIBRIDE SHOOTING****************-->
+    <div id="shooting">
+        <div class="shooting_title">
+            <div class="title_wrap">
+                <a href="html/guestApplication.html" class="tit01"><img src="/weiwei/img/icon/tit05.jpg"/></a>
+                <a class="work_more" href="html/guestApplication.html"></a>
+            </div>
+        </div>
+        <div class="work_con shoot">
+            <!-- <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/s1.jpg"/></dt>
+                     <dd>
+                         <p>薇薇新娘·卢浮迷情</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/s2.jpg"/></dt>
+                     <dd>
+                         <p>薇薇新娘·凡尔赛玫瑰</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/s3.jpg"/></dt>
+                     <dd>
+                         <p>薇薇新娘·巴洛克宫</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/s4.jpg"/></dt>
+                     <dd>
+                         <p>薇薇新娘·巴黎时光</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/s5.jpg"/></dt>
+                     <dd>
+                         <p>爱情海Ⅴ</p>
+                         <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>
+             <a href="#" class="dlbox">
+                 <dl>
+                     <dt><img src="img/s6.jpg"/></dt>
+                     <dd>
+                         <p>凤凰谷外景·爱的告白/p>
+                             <span>16-07-14</span>
+                     </dd>
+                 </dl>
+             </a>-->
+        </div>
+    </div>
+    <!--**********VIVIBRIDE PHOTO****************-->
+    <div id="photo">
+        <div class="photo_title">
+            <div class="title_wrap">
+                <a href="#" class="tit01"><img src="/weiwei/img/icon/tit06.jpg"/></a>
+                <a class="work_more" href="#"></a>
+            </div>
+        </div>
+        <div class="photo_con">
+            <div class="price_link1">
+                <p>薇薇新娘</p>
+                <span>婚纱写真网络特惠套系</span>
+            </div>
+            <div class="price_link2">
+                <a href="html/shoppingCart.html?price=5588&name=尊容相约系&id=0">
+                    <p class="price">￥5588</p>
+                    <span class="name">尊容相约系</span>
+                </a>
+            </div>
+            <div class="price_link3">
+                <a href="html/shoppingCart.html?price=4688&name=浪漫花海系&id=2">
+                    <p class="price">￥4688</p>
+                    <span class="name">浪漫花海系</span>
+                </a>
+            </div>
+            <div class="price_link4">
+                <a href="html/shoppingCart.html?price=3888&name=幸福有约系&id=4">
+                    <p class="price">￥3888</p>
+                    <span class="name">幸福有约系</span>
+                </a>
+            </div>
+            <div class="price_link5">
+                <a href="html/shoppingCart.html?price=6999&name=大理双廊旅拍&id=1">
+                    <p class="price">￥6999</p>
+                    <span class="name">大理双廊旅拍</span>
+                </a>
+            </div>
+            <div class="price_link6">
+                <a href="html/shoppingCart.html?price=899&name=唯美写真套系&id=3">
+                    <p class="price">￥899</p>
+                    <span class="name">唯美写真套系</span>
+                </a>
+            </div>
+            <div class="price_link7">
+                <a href="html/shoppingCart.html?price=1399&name=魅力写真套系&id=5">
+                    <p class="price">￥1399</p>
+                    <span class="name">魅力写真套系</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--**********VIVIBRIDE PHOTO Tips****************-->
+    <div id="phototips">
+        <div class="phototips_title">
+            <div class="title_wrap">
+                <a href="html/photoTips.html" class="tit01"><img src="/weiwei/img/icon/tit07.jpg"/></a>
+                <a class="work_more2" href="html/search.html"></a>
+                <span class="wrap"></span>
+            </div>
+        </div>
+        <div class="phototips_con">
+            <ul>
+                <li>
+                    <div class="newstitle">15-12-19</div>
+                    <a class="newsimg" href="html/photoTipsDetail.html?id=0"><img src="/weiwei/img/conimg/n1.gif"/></a>
+                    <div class="newscon">
+                        <h3>拍婚纱照姿势要点解析 助你出拍</h3>
+                        <p>在举办婚礼的过程中我们都有新娘抱的环节，那么不妨把这种幸福..</p>
+                        <a href="html/photoTipsDetail.html?id=0">MORE</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="newstitle">15-12-19</div>
+                    <a class="newsimg" href="html/photoTipsDetail.html?id=1"><img src="/weiwei/img/conimg/n2.gif"/></a>
+                    <div class="newscon">
+                        <h3>拍婚纱照姿势要点解析 助你出拍</h3>
+                        <p>明星的照片中经常有双手叉腰的动作，其实这个婚纱照动作POSE非..</p>
+                        <a href="html/photoTipsDetail.html?id=1">MORE</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="newstitle">15-12-19</div>
+                    <a class="newsimg" href="html/photoTipsDetail.html?id=2"><img src="/weiwei/img/conimg/n3.gif"/></a>
+                    <div class="newscon">
+                        <h3>拍婚纱照姿势要点解析 助你出拍</h3>
+                        <p>正面姿势的婚纱照是韩式婚纱照中常用的姿势，这种POSE既然存在..</p>
+                        <a href="html/photoTipsDetail.html?id=2">MORE</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="newstitle">15-12-19</div>
+                    <a class="newsimg" href="html/photoTipsDetail.html?id=3"><img src="/weiwei/img/conimg/n4.gif"/></a>
+                    <div class="newscon">
+                        <h3>拍婚纱照姿势要点解析 助你出拍</h3>
+                        <p>本篇文章将为大家带来拍婚纱照的姿势要点，因为一套完美的婚纱..</p>
+                        <a href="html/photoTipsDetail.html?id=3">MORE</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

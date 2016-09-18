@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 400px;
+            border-radius: 5%;
+            height: 300px;
+            background: #eee;
+            margin: 200px auto 0;
+        }
+        label{
+            width: 60px;
+            float: left;
+            height: 22px;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            margin: 22px 0 0 50px;
+        }
+        input{
+            width: 205px;
+            height: 20px;
+            float:right ;
+            margin: 20px 50px 0 0;
+        }
+        #btn{
+            width: 50px;
+            height: 30px;
+            border: 0;
+            margin: 40px 0 0 180px;
+            background: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <script src="../js/jquery-3.1.0.js"></script>
+</head>
+<body>
+    <div>
+        <label>id:</label><input type="text" id="num"/>
+        <label>imgsrc:</label><input type="text" id="imgsrc"/>
+        <label>name:</label><input type="text" id="name"/>
+        <label>date:</label><input type="text" id="date">
+        <button id="btn">提交</button>
+    </div>
+    <script>
+        function UrlSearch()
+        {
+            var name,value;
+            var str=location.href;
+            var num=str.indexOf("?");
+            str=str.substr(num+1);
+            var arr=str.split("&");
+            for(var i=0;i < arr.length;i++){
+                num=arr[i].indexOf("=");
+                if(num>0){
+                    name=arr[i].substring(0,num);
+                    value=arr[i].substr(num+1);
+                    this[name]=value;
+                }
+            }
+        }
+        var request=new UrlSearch();
+        var pid=request.id;
+        var pId;
+        $.ajax({
+            url:"/product/GetProductById_get?id="+pid,
+            success:function(data){
+                var dataJsonOB=JSON.parse(data.Data);
+                $("#num").val(data.Id);
+                pId=data.Id;
+                $("#num").attr("disabled","disabled");
+                $("#imgsrc").val(dataJsonOB.imgsrc);
+                $("#name").val(dataJsonOB.name);
+                $("#date").val(dataJsonOB.date);
+            },
+            dataType:"json"
+        });
+
+        $("#btn").click(function(){
+            var pimgsrc=$("#imgsrc").val();
+            var pname=$("#name").val();
+            var pdate=$("#date").val();
+
+            var dataJsonOb={
+                "imgsrc":pimgsrc,
+                "name":pname,
+                "date":pdate
+            }
+            var dataJsonStr=JSON.stringify(dataJsonOb);
+            $.ajax({
+                url:"/product/CreateUpdateProduct_post",
+                data:{
+                    "id":pId,
+                    "datajson":dataJsonStr
+                },
+                success:function(data){
+                    if(data==1){
+                        alert("修改成功");
+                        location.assign("getproducts.html");
+                    }else{
+                        alert("修改失败");
+                    }
+                },
+                error:function(){
+                    alert("ajax error");
+                },
+                dataType:"json",
+                type:"post"
+            })
+        });
+    </script>
+</body>
+</html>

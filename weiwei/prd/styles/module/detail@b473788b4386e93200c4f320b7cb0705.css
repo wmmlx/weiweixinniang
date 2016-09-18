@@ -1,0 +1,66 @@
+@charset "UTF-8";body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend{margin:0;padding:0}
+img{border:0;display:block}
+li{list-style:none}
+a{text-decoration:none}
+body{font:12px "微软雅黑"}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal}
+i,em{font-style:normal}
+html,body{height:100%}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden}
+#header{position:fixed;top:0;width:100%;height:120px;background:url(/weiwei/img/icon/topbg.jpg) repeat-x;z-index:10000000}
+.header_con{width:1024px;position:absolute;left:0;right:0;margin:auto}
+.logo{position:absolute;width:150px;left:0;top:0;float:left}
+.header_right{float:left;width:832px;position:absolute;top:0;left:167px}
+.header_link{width:268px;float:right;padding:10px 0 25px 0}
+.header_link li{padding-left:5px;float:left}
+.icon3 i{float:left;color:#fb383c;width:57px;height:21px;font-size:14px}
+.icon3 em{float:right;width:123px;height:18px;background:url("/weiwei/img/icon/tel.png") no-repeat}
+#header_nav{clear:both;width:801px;height:30px;margin-left:30px;background:url("/weiwei/img/icon/nav_bg.jpg") no-repeat}
+#header_nav li{float:left;height:30px}
+#header_nav p{color:#999;font-size:10px}
+#header_nav a{float:left;width:133px;font-size:14px;color:#333;text-align:center}
+#foot{color:#fff;background:#ba292e;clear:both}
+#foot .footwrap{height:260px;background:url("/weiwei/img/icon/contuctus_02.png") no-repeat center}
+#foot .foot1{width:1024px;margin:0 auto}
+#foot .foot1 .contact{padding-top:15px;padding-bottom:68px;width:310px;margin-left:405px}
+#foot .foot1 .contact li{float:left;margin-right:48px}
+#foot .foot1 .contact a{float:left}
+#foot .foot1 .stress{margin-top:60px;width:1000px;height:97px;padding-top:30px;font-size:14px;border-bottom:1px solid #fff;border-top:1px solid #fff}
+#foot .foot1 .stress dl{float:left;width:250px;height:58px}
+#foot .foot1 .stress dt{float:left}
+#foot .foot1 .stress dd{margin-left:10px;float:left}
+#foot .foot1 .stress dd .phone{display:block;color:#fff;font-size:16px;font-weight:900;line-height:26px}
+#foot .foot1 .stress dd .phone:hover{color:yellow}
+#foot .foot1 .stress dd .method{height:25px}
+#foot .foot1 .foot_nav{height:180px}
+#foot .foot1 .foot_nav .nav_left{width:320px;float:left;margin-top:72px}
+#foot .foot1 .foot_nav .nav_left li{float:left;width:103px;height:38px}
+#foot .foot1 .foot_nav .nav_left a{color:#fff;float:left}
+#foot .foot1 .foot_nav .nav_right{float:right;margin-top:28px}
+#foot .foot1 .foot_nav .nav_right li{float:left;margin-right:28px}
+#foot .foot2{height:210px;background:#202124;margin:23px auto 0}
+#foot .foot2_con{width:1024px;margin:0 auto;padding-top:30px}
+#foot .foot2_con p{text-align:center;color:#5a5a5a;line-height:28px}
+#foot .foot2_con .foot_link{width:1024px;margin-top:20px}
+#foot .foot2_con .foot_link span{float:left;height:40px;padding:0 30px 0 30px;text-align:left;color:#ccc}
+#foot .foot2_con .links{float:right;width:900px}
+#foot .foot2_con .links a{padding:5px;font-size:12px;color:#666;line-height:14px}
+.dlbox{display:block;background:#f2f2f2;width:325px;height:444px;float:left;margin:10px 0 0 8px;color:#333;cursor:pointer}
+.dlbox:hover{background:red;color:#fff}
+.dlbox dl{float:left;width:325px;height:444px}
+.dlbox dt{width:303px;height:303px;padding:5px 0 0 5px}
+.dlbox img{border:0;width:313px;height:313px;text-align:center}
+.dlbox p{margin:25px 0 0 17px;line-height:24px;font-size:16px}
+.dlbox span{margin-left:17px;font-size:12px}
+#currentAdress{height:82px}
+.currentAdressCon{width:1024px;height:82px;margin:160px auto 0;font-size:14px;border-bottom:1px solid #eee;color:#222}
+.currentAdressCon a{font-size:14px;color:#222}
+.detail_con{width:1024px;height:auto;margin:0 auto 20px}
+.detail_title{width:1024px;text-align:center;font-weight:900;font-size:30px;height:101px;line-height:101px;color:#666;border-bottom:1px dotted #eee}
+.bdshare-button-style0-16{width:225px;height:56px;margin:20px auto 0}
+.detail_Box{width:1024px;height:auto;margin:0 auto;padding:50px 0;background:#f2f2f2}
+.detail_Box p{font-size:15px;line-height:35px;text-align:left;text-indent:30px}
+.detail_Box img{width:100%}
+.nextAndPre{width:1024px;margin:0 auto 40px}
+.nextAndPre p{font-size:14px}
+.nextAndPre a{font-size:14px;margin-left:5px}
